@@ -12,6 +12,7 @@ TagManager:
   - ActorHost
   - Problem
   - Block
+  - Planner
   layers:
   - Default
   - TransparentFX
