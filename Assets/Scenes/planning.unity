@@ -351,7 +351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28017817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5008245, y: 0.44123173, z: 0.6875739}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 992868513}
@@ -564,8 +564,9 @@ MonoBehaviour:
   - first: 2
     second: 3
   UnityInstructions:
+  - orient 0 3
   - play 1
-  - transform 1 3 1.04 2 2.12
+  - transform 1 3 0.5 2 1.7
   - attach 0 1
   opString: (PickUp 0 1 2 3)
   reset: 0
@@ -722,6 +723,7 @@ GameObject:
   - component: {fileID: 456483708}
   - component: {fileID: 456483707}
   - component: {fileID: 456483711}
+  - component: {fileID: 456483712}
   m_Layer: 0
   m_Name: Boid
   m_TagString: SteeringAgent
@@ -767,16 +769,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steering: 0
+  orienting: 0
   playingClip: 0
   currentGoal: {x: 0, y: 0, z: 0}
   targetVelocity: {x: 0, y: 0, z: 0}
   slowRadius: 2.5
-  goalRadius: 0.1
+  goalRadius: 0.25
   angularSlowRadius: 1.2
   angularGoalRadius: 0.05
-  arriveTime: 0.75
+  arriveTime: 0.25
   alignTime: 0.25
-  KinematicBody: {fileID: 0}
+  KinematicBody: {fileID: 456483708}
   force: {x: 0, y: 0, z: 0}
   torque: 0
   tiltAmountForward: 0
@@ -793,10 +796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7552592b48a3f2459a861c8f664dd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAXSPEED: 2
-  MAXANGULAR: 3
-  MAXACCEL: 3
-  MAXROTATION: 2
+  MAXSPEED: 3
+  MAXANGULAR: 6
+  MAXACCEL: 8
+  MAXROTATION: 3
 --- !u!95 &456483711
 Animator:
   serializedVersion: 3
@@ -814,6 +817,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &456483712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456483706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d426faf3bd9ac4fa052ae3927cc680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultParent: {fileID: 0}
 --- !u!1 &473670542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,8 +1160,10 @@ MonoBehaviour:
   - first: 2
     second: 3
   UnityInstructions:
-  - transform 1 2 2.12 3 1.04
+  - orient 0 3
+  - transform 1 2 1.7 3 .5
   - play 1
+  - dettach 1
   opString: (PutDown 0 1 2 3)
   reset: 0
 --- !u!95 &805926701
@@ -1588,7 +1605,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1030074503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1243727052}
@@ -1659,6 +1676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110181540}
   - component: {fileID: 1110181541}
+  - component: {fileID: 1110181542}
   m_Layer: 0
   m_Name: Planner
   m_TagString: Planner
@@ -1690,12 +1708,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8740e9c5c642b8342b7b418843909f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  makePlan: 0
+  savePlan: 0
+  retrievePlan: 0
   getPlan: 0
   PlanSteps:
-  - (initial)-2
-  - (PickUp Boid Block1 L1 L3)-14
-  - (PutDown Boid Block1 L1 L2)-4
-  - (goal)-3
+  - (initial)-16
+  - (PickUp Boid Block1 L1 L3)-2696
+  - (Move Boid L1 L3)-2265
+  - (PutDown Boid Block1 L3 L4)-2289
+  - (PickUp Boid Block2 L3 L5)-2255
+  - (PutDown Boid Block2 L3 L1)-20
+  - (goal)-17
+--- !u!114 &1110181542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1110181539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5e0f6cf6490bf4db20fccdd4d3b4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Saved:
+  - Plan:
+    - (initial)-16
+    - (PickUp Boid Block1 L1 L3)-2696
+    - (Move Boid L1 L3)-2265
+    - (PutDown Boid Block1 L3 L4)-2289
+    - (PickUp Boid Block2 L3 L5)-2255
+    - (PutDown Boid Block2 L3 L1)-20
+    - (goal)-17
+  - Plan:
+    - (initial)-2
+    - (PickUp Boid Block1 L1 L3)-14
+    - (PutDown Boid Block1 L1 L2)-4
+    - (goal)-3
+  - Plan:
+    - (initial)-2
+    - (Move Boid L1 L2)-419
+    - (PickUp Boid Block1 L2 L4)-373
+    - (Move Boid L2 L7)-138
+    - (PutDown Boid Block1 L7 L2)-6
+    - (goal)-3
+  - Plan:
+    - (initial)-18
+    - (Move Boid L1 L2)-349
+    - (PickUp Boid Block1 L2 L4)-292
+    - (Move Boid L2 L7)-147
+    - (PutDown Boid Block1 L7 L0)-21
+    - (goal)-19
+  - Plan:
+    - (initial)-16
+    - (PickUp Boid Block1 L1 L3)-2696
+    - (Move Boid L1 L3)-2265
+    - (PutDown Boid Block1 L3 L4)-2289
+    - (PickUp Boid Block2 L3 L5)-2255
+    - (PutDown Boid Block2 L3 L1)-20
+    - (goal)-17
+  - Plan:
+    - (initial)-2
+    - (PickUp Boid Block1 L1 L3)-13
+    - (PutDown Boid Block1 L1 L0)-4
+    - (goal)-3
+  reset: 0
 --- !u!1 &1128522660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,7 +1955,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 456483706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1208246, y: 0.905, z: -3.392426}
+  m_LocalPosition: {x: -0.62000006, y: 0.45499998, z: -4.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1030074504}
@@ -2107,6 +2184,7 @@ GameObject:
   - component: {fileID: 1545508171}
   - component: {fileID: 1545508170}
   - component: {fileID: 1545508173}
+  - component: {fileID: 1545508174}
   m_Layer: 0
   m_Name: Block2
   m_TagString: Block
@@ -2121,7 +2199,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545508168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00082451105, y: 1.093, z: -2.2624261}
+  m_LocalPosition: {x: 1.56, y: 0.51, z: -4.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 877619663}
@@ -2197,6 +2275,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1545508174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1545508168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d426faf3bd9ac4fa052ae3927cc680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultParent: {fileID: 0}
 --- !u!1 &1580101879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,13 +2459,13 @@ MonoBehaviour:
   InitialState:
   - at Boid L1
   - at Block1 L3
-  - at Block2 L4
+  - at Block2 L5
   - occupied L1
-  - occupied L4
+  - occupied L5
   - occupied L3
   - freehands Boid
   GoalState:
-  - at Block1 L2
+  - at Block2 L1
   reset: 0
   setInitialState: 0
 --- !u!1 &1648221672
@@ -3157,6 +3247,7 @@ GameObject:
   - component: {fileID: 2124777849}
   - component: {fileID: 2124777848}
   - component: {fileID: 2124777851}
+  - component: {fileID: 2124777852}
   m_Layer: 0
   m_Name: Block1
   m_TagString: Block
@@ -3171,7 +3262,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124777846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00082451105, y: 1.04, z: -3.392426}
+  m_LocalPosition: {x: 0.5, y: 0.5, z: -4.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 877619663}
@@ -3247,3 +3338,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2124777852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2124777846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d426faf3bd9ac4fa052ae3927cc680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultParent: {fileID: 0}
