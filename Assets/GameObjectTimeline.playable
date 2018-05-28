@@ -97,9 +97,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Schema: {fileID: 0}
   Constraints:
-  - orient reverse Action1 Action2
-  - cntg Action1 Action2
-  agentOrient: 0
+  - orient Action1 reverse Action2
+  - linked Action1 Action2
+  agentOrient: -1
+  location: 
 --- !u!114 &114154400457108186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,6 +226,7 @@ MonoBehaviour:
   Constraints:
   - not schema move
   agentOrient: -1
+  location: 
 --- !u!114 &114326600431696128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -313,13 +315,24 @@ MonoBehaviour:
   m_Name: DiscourseAsset
   m_EditorClassIdentifier: 
   camSchema:
-    scale: 2
+    scale: 1
     targetLocation: 
     targetOrientation: -1
     hangle: 0
     vangle: -30
-  Constraints:
-  - target Action1
+  targetSchema:
+    orient: 0
+    location: L7
+    ActionSegs:
+    - actionVarName: Action1
+      targetVarName: 
+      startPercent: 0.77
+      endPercent: 1
+    - actionVarName: Action2
+      targetVarName: 
+      startPercent: 0
+      endPercent: 0.71
+  Constraints: []
 --- !u!114 &114615208081275978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,3 +348,4 @@ MonoBehaviour:
   Constraints:
   - not schema move
   agentOrient: -1
+  location: 
