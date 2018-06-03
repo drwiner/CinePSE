@@ -92,16 +92,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00e300adbdfba55428a438c1d2b5a639, type: 3}
+  m_Script: {fileID: 11500000, guid: c0e26b60da7e8894ca01af65bb177368, type: 3}
   m_Name: FabulaAsset
   m_EditorClassIdentifier: 
-  Schema:
-    exposedName: 
-    defaultValue: {fileID: 0}
   Constraints:
   - linked Action1 Action2
-  agentOrient: -1
-  location: 
 --- !u!114 &114154400457108186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,6 +225,7 @@ MonoBehaviour:
   - not schema move
   agentOrient: -1
   location: 
+  schema: {fileID: 0}
 --- !u!114 &114326600431696128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,8 +320,8 @@ MonoBehaviour:
     hangle: 0
     vangle: -30
   targetSchema:
-    orient: 0
-    location: L7
+    orient: -1
+    location: 
     ActionSegs:
     - actionVarName: Action1
       targetVarName: 
@@ -354,3 +350,4 @@ MonoBehaviour:
   - not schema move
   agentOrient: -1
   location: 
+  schema: {fileID: 0}
