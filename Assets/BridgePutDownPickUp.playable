@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: GameObjectTimeline
+  m_Name: BridgePutDownPickUp
   m_EditorClassIdentifier: 
   m_NextId: 0
   m_Tracks:
@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Name: FabulaAsset
   m_EditorClassIdentifier: 
   Constraints:
-  - linked Action1 Action2
+  - literal protected freehands agent
+  - linked protected Action1 Action2
+  - precondition at block2 block2-location
 --- !u!114 &114154400457108186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,8 +224,8 @@ MonoBehaviour:
     exposedName: 6fdacc59178ab794e9486c8b37a72212
     defaultValue: {fileID: 0}
   Constraints:
-  - not schema move
-  agentOrient: -1
+  - terms agent block1 agent-location block1-location
+  agentOrient: 0
   location: 
   schema: {fileID: 0}
 --- !u!114 &114326600431696128
@@ -314,13 +316,13 @@ MonoBehaviour:
   m_Name: DiscourseAsset
   m_EditorClassIdentifier: 
   camSchema:
-    scale: 1
+    scale: 3
     targetLocation: 
-    targetOrientation: -1
-    hangle: 0
-    vangle: -30
+    targetOrientation: 0
+    hangle: 6
+    vangle: 2
   targetSchema:
-    orient: -1
+    orient: 0
     location: 
     ActionSegs:
     - actionVarName: Action1
@@ -347,7 +349,7 @@ MonoBehaviour:
     exposedName: 583391d1b36e62940b6e1a21a41f3487
     defaultValue: {fileID: 0}
   Constraints:
-  - effect at 0 1
-  agentOrient: -1
+  - terms agent block2 agent-location block2-location
+  agentOrient: 0
   location: 
   schema: {fileID: 0}
