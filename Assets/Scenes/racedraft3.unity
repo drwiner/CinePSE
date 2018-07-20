@@ -180,6 +180,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -192,14 +194,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.65
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.43
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -208,14 +211,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -223,6 +228,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -230,7 +237,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -238,6 +244,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -245,7 +253,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -726,7 +733,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.38
+      value: -6.94
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.y
@@ -734,7 +741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.08
+      value: -4.17
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalRotation.x
@@ -742,7 +749,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9996838
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalRotation.z
@@ -750,7 +757,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.025145458
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_RootOrder
@@ -761,6 +768,58 @@ Prefab:
       propertyPath: defaultParent
       value: 
       objectReference: {fileID: 877619663}
+    - target: {fileID: 4567837280229930, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.68028164
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567837280229930, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.71568614
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567837280229930, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.11108473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567837280229930, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.1125629
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567837280229930, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.050380986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112072659819160, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.676431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112072659819160, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.70905954
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112072659819160, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.14759119
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112072659819160, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.13376322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112072659819160, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.053063557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208952278349134, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.009347652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208952278349134, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208952278349134, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.99995637
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
   m_IsPrefabParent: 0
@@ -1367,6 +1426,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -1379,8 +1440,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.54
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -1389,14 +1450,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -1404,6 +1467,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -1411,7 +1476,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -1419,6 +1483,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -1426,7 +1492,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -1555,10 +1620,22 @@ MonoBehaviour:
   - {fileID: 1740168239}
   - {fileID: 1555322834}
   - {fileID: 104703285}
-  Edges: []
+  Edges:
+  - S: {fileID: 2072699166}
+    T: {fileID: 1740168239}
+    Weight: 0
+  - S: {fileID: 1740168239}
+    T: {fileID: 1555322834}
+    Weight: 0
+  - S: {fileID: 1555322834}
+    T: {fileID: 104703285}
+    Weight: 0
+  - S: {fileID: 1740168239}
+    T: {fileID: 104703285}
+    Weight: 0
   adjacent_distance: 0.6
   calculateEdgesByDistance: 0
-  makeEdgesByHand: 1
+  makeEdgesByHand: 0
 --- !u!4 &28017819
 Transform:
   m_ObjectHideFlags: 0
@@ -1631,7 +1708,7 @@ PlayableDirector:
   m_GameObject: {fileID: 33730056}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 2097468639}
+  m_PlayableAsset: {fileID: 502643225}
   m_InitialState: 0
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
@@ -1983,6 +2060,24 @@ PlayableDirector:
     value: {fileID: 1517959303}
   - key: {fileID: 326109905}
     value: {fileID: 1517959303}
+  - key: {fileID: 85255936}
+    value: {fileID: 1517959303}
+  - key: {fileID: 650187175}
+    value: {fileID: 0}
+  - key: {fileID: 1538235971}
+    value: {fileID: 0}
+  - key: {fileID: 361795344}
+    value: {fileID: 0}
+  - key: {fileID: 1168206355}
+    value: {fileID: 0}
+  - key: {fileID: 511664667}
+    value: {fileID: 0}
+  - key: {fileID: 1072090348}
+    value: {fileID: 0}
+  - key: {fileID: 602248489}
+    value: {fileID: 0}
+  - key: {fileID: 1489541883}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - f88c83c78d29ab74085f58797b64e283: {fileID: 0}
@@ -2038,6 +2133,7 @@ PlayableDirector:
     - f71efe69aaf08b34eac2a267019d4a08: {fileID: 2052764176}
     - c3e000a5be5651d418d683de9acb6e2f: {fileID: 2052764176}
     - d00d3497113e4f74ba091ef399bb1edc: {fileID: 0}
+    - 464899810c0959b4ba04e4c5ed2fee27: {fileID: 0}
     - bf8201622b921694294180778da97250: {fileID: 0}
     - cae3dc26dc2ae7546b503efef4f82ccf: {fileID: 0}
     - 4ff476ec7e7322742bc7283401a6d3a4: {fileID: 0}
@@ -2054,6 +2150,7 @@ PlayableDirector:
     - 502c2719671900249a968b22dac9a354: {fileID: 0}
     - 56258e7b56f540c489c897075e463bd0: {fileID: 0}
     - 6e13a3901e4e73c4796b035e4b2a0b96: {fileID: 0}
+    - f4dc5d91bc8c8fe47b9b376d53e108b1: {fileID: 0}
     - ec65a7d679278d549bb8ea5943c775db: {fileID: 0}
     - d399c4665da35ac4b934a4a499a028e9: {fileID: 2052764176}
     - c7fbb2ad490dbca41b53b197cac7b302: {fileID: 0}
@@ -2076,6 +2173,7 @@ PlayableDirector:
     - 79c76c0429bbb154b992066ca50ff348: {fileID: 0}
     - 2c10642485ce6524f809944d27780457: {fileID: 0}
     - 7eec0a96f0daf0c4dbf98f734db9b761: {fileID: 0}
+    - cc7d67fe24f23524fa76efcc37fa5d24: {fileID: 0}
     - 466e7169b69bed54fadb2efcf46b6c77: {fileID: 0}
     - 57621f144274f9545a9d2226f64ae6ab: {fileID: 2052764176}
     - 3d5391ddb7ba3a54e81621d24ceb6c87: {fileID: 0}
@@ -2164,6 +2262,7 @@ PlayableDirector:
     - f9aed87430c490544a9b2f0139ea2afd: {fileID: 0}
     - 7e4b21892e8cc934681cbfdba636fe14: {fileID: 0}
     - c87efb7372be3304b984ec4707305d7e: {fileID: 0}
+    - 8e3dfb9693b14fa49b2d8d84bedab5fd: {fileID: 0}
     - c1757b51967274440bb24f7cf4a0fe22: {fileID: 0}
     - 18930bd524ee2be45ada2671a5fe1fec: {fileID: 0}
     - e290a622c64231a42a4b8e2adcae0327: {fileID: 2052764176}
@@ -2171,6 +2270,7 @@ PlayableDirector:
     - 0f9919c6e4b18f6468fe3fee5d2e9302: {fileID: 0}
     - d51ff35e038cde94fb2cafa2f32cd1ae: {fileID: 0}
     - a902e861969485f4fac852990290dcc0: {fileID: 0}
+    - 4567c246eaab8874cb41736b95f6f702: {fileID: 2052764176}
     - c3ef79d6342b73649a9b2448de38cb0c: {fileID: 2052764176}
     - 9f2df43eabdeafa4aa23b01cde72abe4: {fileID: 0}
     - 990d01e43ac9f854ba9b99f83893107a: {fileID: 0}
@@ -2226,6 +2326,7 @@ PlayableDirector:
     - 527e504e7ba15bd4fbc892d811b12e6a: {fileID: 2052764176}
     - f22491b5f4cd9e340b276250a959009d: {fileID: 0}
     - c0c074c73cb1713419258ff27e6c4294: {fileID: 0}
+    - 114e73ec7030cb0488f55a6942207b92: {fileID: 2052764176}
     - d0e8b840326b7ee47a3fc000cfb72c82: {fileID: 0}
     - 77c7ab8bfc85c454d87b76f8bc5014cc: {fileID: 2052764176}
     - 007007cb7105aad408b6e0baf8f647fd: {fileID: 0}
@@ -2238,6 +2339,7 @@ PlayableDirector:
     - 3c9b06590fec5a647bf9244c4ea40c29: {fileID: 0}
     - c2650aba110d14446b9a2766c38e8b64: {fileID: 0}
     - 1af432bfdb665c94c9113d6abdffbbf7: {fileID: 0}
+    - bb3142fbcedabfc449953a847cbc5df5: {fileID: 0}
     - e151ece94d6e1c849b9d21fc992845c9: {fileID: 0}
     - 05a43fe67f844434c97140bfd1361cf5: {fileID: 2052764176}
     - fafdf568194df254091d36ffe06899fb: {fileID: 0}
@@ -2290,6 +2392,8 @@ PlayableDirector:
     - f9a00087e6a4a9e40a75695e6531788a: {fileID: 590875762}
     - 0369a68f4f5e1d54ebd827cfb053d005: {fileID: 0}
     - 3fab26a3c7b4dfb419d2455cfdf1ade1: {fileID: 0}
+    - c8f165cb35ced944784a2a156fcda5dc: {fileID: 0}
+    - 69f9bb8e05a4560448e14240cc40b1dc: {fileID: 0}
     - ff182f6ec35a2e54e85c23f04e3b0507: {fileID: 2052764176}
     - 266723d2fcbcaa745b756812da1b0c51: {fileID: 0}
     - 60a269fff75185349b6e0339a4f19060: {fileID: 0}
@@ -2350,6 +2454,7 @@ PlayableDirector:
     - 5f65e3540f67b0c4c9577ee85d5dcc82: {fileID: 0}
     - 49947bc99eb2c064d9c2b7d31a9e4b22: {fileID: 0}
     - dfc48e835a6b9c643a67754940aae910: {fileID: 0}
+    - 67070e62b2374e84ba605f69c6387917: {fileID: 0}
     - 57db0d21e3157234d8a69f4e9a8307d2: {fileID: 0}
     - 2dadf32ff6738b54d830256087e9f3fb: {fileID: 0}
     - 0082fa81d6962544ca6f6c67dc9bb4a2: {fileID: 0}
@@ -2386,6 +2491,7 @@ PlayableDirector:
     - 8a713d35bd982414a98137f3107416f3: {fileID: 0}
     - ee8e6c9ef61ce124bb4b04b1adac186f: {fileID: 0}
     - d6befed6b83fb4e4787ac1a5d5db2524: {fileID: 0}
+    - 17f4c5889b754da41b5c139e6ae38862: {fileID: 0}
     - c8f8462cfecd98e4590d2347c862f04e: {fileID: 2052764176}
     - dc91e22e41b1d7e4993a6f348985dc44: {fileID: 2052764176}
     - 55706867b81c2c04f8996bee5aa6ddde: {fileID: 0}
@@ -2430,6 +2536,7 @@ PlayableDirector:
     - 60274e7a20df96547870c4adbfad2b60: {fileID: 2052764176}
     - d26f3a77e2dac1a46a0680eefdea615f: {fileID: 0}
     - 74e3d7cda089e1841b723e57f511eecf: {fileID: 2052764176}
+    - af991fdbed53f664ca1e14559c030c3c: {fileID: 590875762}
     - 649a7b51b79d0484583974901ecbab75: {fileID: 2052764176}
     - 79087425da1705b458222033869342f4: {fileID: 0}
     - a8a03ec48ca7902448e38b64a8682fcf: {fileID: 0}
@@ -2442,6 +2549,7 @@ PlayableDirector:
     - 2d2b5eaa696e46444922d69bc94e0f7c: {fileID: 2052764176}
     - 520cc104c18eff84c8e5649903c87ad4: {fileID: 0}
     - 390324cfaa792e142ab8b01dafd198f6: {fileID: 0}
+    - 2fd8f4b566586f844830349e741c9c65: {fileID: 590875762}
     - b8ad468a49381cb4fbf652b6426c532d: {fileID: 0}
     - 85bd9a440ad1c934a9028dd98c01b353: {fileID: 0}
     - 0d4f770a1cc3d3a42984420c5c21c32a: {fileID: 0}
@@ -2477,6 +2585,7 @@ PlayableDirector:
     - 249b7944431ec9546993944a5ee37909: {fileID: 0}
     - 6ae2d4aa4d50a9649b5afbd452eed3ff: {fileID: 0}
     - 74c350518e86c604e99c3f2b1bf87b20: {fileID: 2052764176}
+    - 215b9d861f16b0348805996ac4a37fd4: {fileID: 0}
     - d01e5e7560081624580dfb4889c1843d: {fileID: 0}
     - 1482607be561e2e469347299f177b2c3: {fileID: 33730058}
     - 51d6fcdb4659361498f7c356b9595142: {fileID: 0}
@@ -3080,12 +3189,16 @@ MonoBehaviour:
       targetOrientation: -1
       hangle: 165
       vangle: 0
+      distance: 0
+      height: 0
     Shot2:
       scale: 1
       targetLocation: 
       targetOrientation: -1
       hangle: 3
       vangle: 0
+      distance: 0
+      height: 0
     Constraints:
     - = location
     camTransitions:
@@ -3361,30 +3474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c065b921cf8979419116ace25dd2be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camSchema:
-    scale: 3
-    targetLocation: 
-    targetOrientation: -1
-    hangle: 165
-    vangle: 0
-  camObject: {fileID: 0}
-  checkConsistency: 0
-  action: {fileID: 331032065}
-  terms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  action2: {fileID: 805926698}
-  terms2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  executeTest: 0
-  fabExecutePlanScript: {fileID: 0}
-  discExecutePlanScript: {fileID: 0}
-  resetPlayableDirectors: 0
 --- !u!1 &65731553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,6 +3884,142 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: SimpleLerp New Game Object-New Game Object
+    m_Version: 1
+--- !u!114 &85255936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05acc715f855ced458d76ee6f8ac6c61, type: 3}
+  m_Name: film_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 865589733}
+    m_UnderlyingAsset: {fileID: 865589733}
+    m_Duration: 2.9930498600006104
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 85255936}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: 'L0-L1_1.Waist.o180.h0.Eye_//_Stroll_// focusOn: BlueBoid// achor:
+      L0-L1_1'
+    m_Version: 1
+  - m_Start: 2.9930498600006104
+    m_ClipIn: 0
+    m_Asset: {fileID: 351076541}
+    m_UnderlyingAsset: {fileID: 351076541}
+    m_Duration: 3.375141143798828
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 85255936}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: 'L1.Waist.o180.h180.Eye_//_Stroll_// focusOn: BlueBoid// achor:
+      L1'
     m_Version: 1
 --- !u!1 &89309718
 GameObject:
@@ -5396,6 +5621,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 8
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -5408,20 +5635,23 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.45
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: LookX
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.27
-        screenxz: 0
-    directive: 2
+        screenxy: 4
+        directive: 2
   - CamDetails:
       scale: 4
       targetLocation: 
       targetOrientation: 0
       hangle: 6
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -5434,14 +5664,16 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.27
         endPercent: 0.74
-        screenxz: 0
-    directive: 1
+        screenxy: 4
+        directive: 2
   - CamDetails:
       scale: 3
       targetLocation: 
       targetOrientation: 0
       hangle: 8
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -5454,14 +5686,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.73
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Depart
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.4
-        screenxz: 0
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -5470,6 +5703,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 8
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -5482,20 +5717,23 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.45
           endPercent: 1
-          screenxz: 0
+          screenxy: 4
+          directive: 2
         - actionVarName: LookX
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.27
-          screenxz: 0
-      directive: 2
+          screenxy: 4
+          directive: 2
     - CamDetails:
         scale: 4
         targetLocation: 
         targetOrientation: 0
         hangle: 6
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -5508,14 +5746,16 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.27
           endPercent: 0.74
-          screenxz: 0
-      directive: 1
+          screenxy: 4
+          directive: 2
     - CamDetails:
         scale: 3
         targetLocation: 
         targetOrientation: 0
         hangle: 8
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -5528,28 +5768,31 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.73
           endPercent: 1
-          screenxz: 0
+          screenxy: 4
+          directive: 2
         - actionVarName: Depart
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.4
-          screenxz: 0
-      directive: 2
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Arrive
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.45
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Depart
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.4
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 3
@@ -5557,6 +5800,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 8
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -5569,14 +5814,15 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.45
           endPercent: 1
-          screenxz: 0
+          screenxy: 4
+          directive: 2
         - actionVarName: LookX
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.27
-          screenxz: 0
-      directive: 2
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -5584,6 +5830,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 8
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -5596,14 +5844,15 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.73
           endPercent: 1
-          screenxz: 0
+          screenxy: 4
+          directive: 2
         - actionVarName: Depart
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.4
-          screenxz: 0
-      directive: 2
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -5759,19 +6008,10 @@ MonoBehaviour:
   FabulaTimelineHost: {fileID: 2052764173}
   DiscourseTimelineHost: {fileID: 33730056}
   fabulaStepNames:
-  - (Stroll OrangeBoid L3 L2)-19087
-  - (Look OrangeBoid L2 L1)-15015
-  - (Stroll BlueBoid L0 L1)-15012
-  - (Look BlueBoid L1 L2)-15013
-  - (Race BlueBoid L1 L3)-14810
+  - (Stroll BlueBoid L0 L1)-8662
   discourseStepNames:
-  - ( Long h45 High )-19088
-  - ( ExtremeLong h45 High )-15016
-  - ( Waist h315 Eye )-15017
-  - ( Waist h85 Eye )-15018
-  - ( Full h0 High )-14811
-  - ( Waist h85 Eye )-14779
-  resetLensKit: 0
+  - ( Waist h0 Eye )-8663
+  - ( Waist h180 Eye )-8664
   decachePlan: 0
   reInitialize: 0
   assembleClips: 0
@@ -7594,6 +7834,21 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: L1.Full.o270.h195.Eye(Clone)
     m_Version: 1
+--- !u!114 &219536507
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7891f34e1f1fd4196d35bf6e8b476e, type: 3}
+  m_Name: TimeTravelAsset
+  m_EditorClassIdentifier: 
+  PD:
+    exposedName: 4567c246eaab8874cb41736b95f6f702
+    defaultValue: {fileID: 0}
+  newTime: 0
 --- !u!114 &219690149
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8149,6 +8404,323 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: playing timeline PutDown
     m_Version: 1
+--- !u!1 &238069761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 238069762}
+  - component: {fileID: 238069764}
+  - component: {fileID: 238069763}
+  m_Layer: 0
+  m_Name: customWithMichael
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238069762
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238069761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2016537118}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238069763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238069761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ac0cf81d3c62747b2c244874bb9c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectParameterTypes: []
+  TermNames: []
+  FabulaStepNames: []
+  DiscourseStepNames: []
+  NonEqualities: []
+  ignoreDidNotStart: []
+  ignoreDidNotEnd: []
+  CameraHost: {fileID: 1797034392}
+  LocationHost: {fileID: 28017817}
+  DSubSteps:
+  - CamDetails:
+      scale: 3
+      targetLocation: 
+      targetOrientation: 0
+      hangle: 1
+      vangle: 1
+      distance: 0
+      height: 0
+    CamObject: 
+    TargetDetails:
+      orient: 0
+      actionSegOfFocus: 0
+      location: 
+      orientTowards: 
+      ActionSegs:
+      - actionVarName: Action
+        targetVarName: 
+        actiontypeID: 0
+        startPercent: 0
+        endPercent: 0.47
+        screenxy: 2
+        directive: 1
+  - CamDetails:
+      scale: 3
+      targetLocation: 
+      targetOrientation: 0
+      hangle: 5
+      vangle: 1
+      distance: 0
+      height: 0
+    CamObject: 
+    TargetDetails:
+      orient: 0
+      actionSegOfFocus: 0
+      location: 
+      orientTowards: 
+      ActionSegs:
+      - actionVarName: Action
+        targetVarName: 
+        actiontypeID: 0
+        startPercent: 0.47
+        endPercent: 1
+        screenxy: 1
+        directive: 1
+  PartialDecomp:
+    discourseSubSteps:
+    - CamDetails:
+        scale: 3
+        targetLocation: 
+        targetOrientation: 0
+        hangle: 1
+        vangle: 1
+        distance: 0
+        height: 0
+      CamObject: 
+      TargetDetails:
+        orient: 0
+        actionSegOfFocus: 0
+        location: 
+        orientTowards: 
+        ActionSegs:
+        - actionVarName: Action
+          targetVarName: 
+          actiontypeID: 0
+          startPercent: 0
+          endPercent: 0.47
+          screenxy: 2
+          directive: 1
+    - CamDetails:
+        scale: 3
+        targetLocation: 
+        targetOrientation: 0
+        hangle: 5
+        vangle: 1
+        distance: 0
+        height: 0
+      CamObject: 
+      TargetDetails:
+        orient: 0
+        actionSegOfFocus: 0
+        location: 
+        orientTowards: 
+        ActionSegs:
+        - actionVarName: Action
+          targetVarName: 
+          actiontypeID: 0
+          startPercent: 0.47
+          endPercent: 1
+          screenxy: 1
+          directive: 1
+    InitialActionSeg:
+      actionVarName: Action
+      targetVarName: 
+      actiontypeID: 0
+      startPercent: 0
+      endPercent: 0.47
+      screenxy: 2
+      directive: 1
+    FinalActionSeg:
+      actionVarName: Action
+      targetVarName: 
+      actiontypeID: 0
+      startPercent: 0.47
+      endPercent: 1
+      screenxy: 1
+      directive: 1
+    InitialCamAction:
+      CamDetails:
+        scale: 3
+        targetLocation: 
+        targetOrientation: 0
+        hangle: 1
+        vangle: 1
+        distance: 0
+        height: 0
+      CamObject: 
+      TargetDetails:
+        orient: 0
+        actionSegOfFocus: 0
+        location: 
+        orientTowards: 
+        ActionSegs:
+        - actionVarName: Action
+          targetVarName: 
+          actiontypeID: 0
+          startPercent: 0
+          endPercent: 0.47
+          screenxy: 2
+          directive: 1
+    FinalCamAction:
+      CamDetails:
+        scale: 3
+        targetLocation: 
+        targetOrientation: 0
+        hangle: 5
+        vangle: 1
+        distance: 0
+        height: 0
+      CamObject: 
+      TargetDetails:
+        orient: 0
+        actionSegOfFocus: 0
+        location: 
+        orientTowards: 
+        ActionSegs:
+        - actionVarName: Action
+          targetVarName: 
+          actiontypeID: 0
+          startPercent: 0.47
+          endPercent: 1
+          screenxy: 1
+          directive: 1
+  NumGroundDecomps: 0
+  readClips: 0
+  setCamsAndLocs: 0
+  assembleDecomp: 0
+  filterCndts: 0
+  reset: 0
+  testOne: 0
+  visualizeTest: 0
+--- !u!320 &238069764
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238069761}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: a120c1d56aa2bbd4581095ac8b9da543, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 114154400457108186, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114032970630252842, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114326600431696128, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 238069761}
+  - key: {fileID: 114090317238295782, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114105736619287422, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114516810137917964, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 238069761}
+  - key: {fileID: 114282253506029066, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114275925401761772, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114258582537737994, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 238069761}
+  - key: {fileID: 114520960298040954, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: 3941ae13d19995f408038af205045e97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: 3941ae13d19995f408038af205045e97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: 3941ae13d19995f408038af205045e97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: faae152a9b895d6448ded10cb0b7d2b7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: faae152a9b895d6448ded10cb0b7d2b7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: faae152a9b895d6448ded10cb0b7d2b7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: 917795e4cc12240449811f365c54486f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: 917795e4cc12240449811f365c54486f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: 917795e4cc12240449811f365c54486f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: e7dce5efe9c78af42be3eca8df5a7d1b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: e7dce5efe9c78af42be3eca8df5a7d1b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: e7dce5efe9c78af42be3eca8df5a7d1b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: 2965431277f7bc44c98669fd70ddf43e, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: 2965431277f7bc44c98669fd70ddf43e, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: 2965431277f7bc44c98669fd70ddf43e, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: 5e28038c7ed472145beff521dbac49e7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: 5e28038c7ed472145beff521dbac49e7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: 5e28038c7ed472145beff521dbac49e7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114520960298040954, guid: a120c1d56aa2bbd4581095ac8b9da543, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114944695894505090, guid: a120c1d56aa2bbd4581095ac8b9da543, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114879984951233900, guid: a120c1d56aa2bbd4581095ac8b9da543, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References:
+    - 4393dde394c7ca34b8ce19507daf642c: {fileID: 1470651574}
+    - 2e6a46419907b264dbb54b178c17f183: {fileID: 805926700}
+    - ee943220213048c44be26585ebdbf680: {fileID: 331032067}
+    - 06303eafefcd4ec4a84e560f21a60b51: {fileID: 1588588400}
+    - 69ca761d6b4f835468150be034b593de: {fileID: 1470651574}
+    - e4d6d21bbeffc1246983fcbbfcc73088: {fileID: 1502558324}
+    - aeddd04332017f749b1b49a8f44240e5: {fileID: 1470651574}
+    - 6e2a9f8647236b94faa319fee3c20c3b: {fileID: 331032067}
+    - a854d00ef52b0984f950cbbab47355ea: {fileID: 1502558324}
+    - 0c9813e11b962fa49bc4b2a02359476d: {fileID: 0}
+    - 867f405fd971a834fbf2bf2247fb9738: {fileID: 1588588400}
+    - d0a8a0d60363db44baf618b80806d74d: {fileID: 1588588400}
 --- !u!114 &239700443
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8941,6 +9513,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e98bc4e32ccfb4c8c32f7051770834, type: 3}
   m_Name: TimeTravelAsset
   m_EditorClassIdentifier: 
+--- !u!114 &287465690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1670381969, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ControlPlayableAsset
+  m_EditorClassIdentifier: 
+  sourceGameObject:
+    exposedName: e565bb2452d53df48b33bac1dedfc9b5
+    defaultValue: {fileID: 0}
+  prefabGameObject: {fileID: 0}
+  updateParticle: 1
+  particleRandomSeed: 1886
+  updateDirector: 1
+  updateITimeControl: 1
+  searchHierarchy: 1
+  active: 1
+  postPlayback: 2
 --- !u!114 &289056202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8952,6 +9546,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fef50d4f26d68140b4083c61a9af29d, type: 3}
   m_Name: LerpMoveObjectAsset
   m_EditorClassIdentifier: 
+--- !u!114 &289206728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab8e19bb785c25469fedcbbaf40ce25, type: 3}
+  m_Name: CamPanAsset
+  m_EditorClassIdentifier: 
+  CVC:
+    exposedName: c8f165cb35ced944784a2a156fcda5dc
+    defaultValue: {fileID: 0}
+  Target:
+    exposedName: f4dc5d91bc8c8fe47b9b376d53e108b1
+    defaultValue: {fileID: 0}
 --- !u!114 &289509792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10738,6 +11349,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 2
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -10750,8 +11363,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -10760,14 +11373,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -10775,6 +11390,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -10782,7 +11399,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -10790,6 +11406,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -10797,7 +11415,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -11017,6 +11634,20 @@ MonoBehaviour:
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
+--- !u!114 &351076541
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
+  m_Name: CinemachineShot
+  m_EditorClassIdentifier: 
+  VirtualCamera:
+    exposedName: 215b9d861f16b0348805996ac4a37fd4
+    defaultValue: {fileID: 0}
 --- !u!1 &355629738
 GameObject:
   m_ObjectHideFlags: 0
@@ -11101,6 +11732,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 355629738}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &361795344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1095772578, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: control_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &366571726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11551,6 +12200,23 @@ MonoBehaviour:
   m_Parent: {fileID: 1899318796}
   m_Children: []
   m_Clips: []
+--- !u!114 &402082964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a60391a06b4eb428176d0894625057, type: 3}
+  m_Name: CamFocusAsset
+  m_EditorClassIdentifier: 
+  CCB:
+    exposedName: 8e3dfb9693b14fa49b2d8d84bedab5fd
+    defaultValue: {fileID: 0}
+  Target:
+    exposedName: af991fdbed53f664ca1e14559c030c3c
+    defaultValue: {fileID: 0}
 --- !u!114 &404310472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12076,6 +12742,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 3
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -12088,8 +12756,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.76
         endPercent: 1
-        screenxz: 4
-    directive: 1
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -12098,6 +12766,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 3
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -12110,22 +12780,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Action1
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.76
       endPercent: 1
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Action1
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.76
       endPercent: 1
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 3
@@ -12133,6 +12805,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 3
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -12145,8 +12819,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -12154,6 +12828,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 3
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -12166,8 +12842,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -13605,6 +14281,32 @@ MonoBehaviour:
   m_Parent: {fileID: 0}
   m_Children: []
   m_Clips: []
+--- !u!114 &502643225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NextId: 0
+  m_Tracks:
+  - {fileID: 650187175}
+  - {fileID: 1538235971}
+  - {fileID: 361795344}
+  - {fileID: 1168206355}
+  - {fileID: 85255936}
+  - {fileID: 511664667}
+  - {fileID: 1072090348}
+  - {fileID: 602248489}
+  - {fileID: 1489541883}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+  m_DurationMode: 0
 --- !u!114 &503613994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13985,6 +14687,140 @@ MonoBehaviour:
   m_Parent: {fileID: 1365665891}
   m_Children: []
   m_Clips: []
+--- !u!114 &511664667
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: focus_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 870674198}
+    m_UnderlyingAsset: {fileID: 870674198}
+    m_Duration: 2.9930498600006104
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 511664667}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0 to 0.47
+    m_Version: 1
+  - m_Start: 2.9930498600006104
+    m_ClipIn: 0
+    m_Asset: {fileID: 402082964}
+    m_UnderlyingAsset: {fileID: 402082964}
+    m_Duration: 3.375141143798828
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 511664667}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0.47 to 1
+    m_Version: 1
 --- !u!114 &512810610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14499,6 +15335,21 @@ MonoBehaviour:
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
+--- !u!114 &539731718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7891f34e1f1fd4196d35bf6e8b476e, type: 3}
+  m_Name: TimeTravelAsset
+  m_EditorClassIdentifier: 
+  PD:
+    exposedName: 114e73ec7030cb0488f55a6942207b92
+    defaultValue: {fileID: 0}
+  newTime: 2.9930499
 --- !u!114 &540522276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15168,6 +16019,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832b12a556ce1df49989bb06b6d816cc, type: 3}
   m_Name: SteeringAsset
   m_EditorClassIdentifier: 
+--- !u!114 &551851435
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: attachTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 1908452880}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &554665494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15984,6 +16853,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832b12a556ce1df49989bb06b6d816cc, type: 3}
   m_Name: SteeringAsset
   m_EditorClassIdentifier: 
+--- !u!114 &602248489
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: follow_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &604288910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17184,6 +18071,24 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: orient 0 3
     m_Version: 1
+--- !u!114 &650187175
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: lerpTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &650728612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17903,6 +18808,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 3
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -17915,8 +18822,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -17925,14 +18832,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -17940,6 +18849,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -17947,7 +18858,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -17955,6 +18865,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -17962,7 +18874,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -18757,6 +19668,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -18769,8 +19682,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.54
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -18779,14 +19692,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -18794,6 +19709,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -18801,7 +19718,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -18809,6 +19725,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -18816,7 +19734,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -19078,6 +19995,22 @@ MonoBehaviour:
   searchHierarchy: 1
   active: 1
   postPlayback: 2
+--- !u!114 &711685669
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fef1f4cfffffb44b0716e0a1c60177, type: 3}
+  m_Name: CamScreenCompositionAsset
+  m_EditorClassIdentifier: 
+  CVC:
+    exposedName: 17f4c5889b754da41b5c139e6ae38862
+    defaultValue: {fileID: 0}
+  x: 0.5
+  y: 0.5
 --- !u!114 &716674095
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20891,15 +21824,11 @@ MonoBehaviour:
   - {fileID: 664049796}
   - {fileID: 1284965343}
   - {fileID: 1284965343}
-  - {fileID: 1284965343}
-  - {fileID: 1284965343}
   TermNames:
   - agent0
   - agent1
   - arrive0
   - arrive1
-  - orig0
-  - orig1
   FabulaStepNames:
   - (Look agent0 arrive0 arrive1)-1320
   - (Look agent1 arrive1 arrive0)-1321
@@ -20911,16 +21840,6 @@ MonoBehaviour:
     second: 1
   - first: 2
     second: 3
-  - first: 4
-    second: 5
-  - first: 2
-    second: 4
-  - first: 3
-    second: 4
-  - first: 3
-    second: 5
-  - first: 2
-    second: 5
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
   CameraHost: {fileID: 1797034392}
@@ -20932,40 +21851,44 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 6
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
-      location: 
+      location: arrive0
       orientTowards: arrive1
       ActionSegs:
       - actionVarName: Look0
-        targetVarName: agent1
+        targetVarName: agent0 agent1
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 4
-    directive: 4
+        screenxy: 4
+        directive: 4
   - CamDetails:
       scale: 3
       targetLocation: 
       targetOrientation: 0
       hangle: 4
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
-      location: 
+      location: arrive1
       orientTowards: arrive0
       ActionSegs:
       - actionVarName: Look1
-        targetVarName: agent0
+        targetVarName: agent1 agent0
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 4
-    directive: 4
+        screenxy: 4
+        directive: 4
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -20974,54 +21897,60 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 6
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: 
+        location: arrive0
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Look0
-          targetVarName: agent1
+          targetVarName: agent0 agent1
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
     - CamDetails:
         scale: 3
         targetLocation: 
         targetOrientation: 0
         hangle: 4
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: 
+        location: arrive1
         orientTowards: arrive0
         ActionSegs:
         - actionVarName: Look1
-          targetVarName: agent0
+          targetVarName: agent1 agent0
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
     InitialActionSeg:
       actionVarName: Look0
-      targetVarName: agent1
+      targetVarName: agent0 agent1
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 4
+      screenxy: 4
+      directive: 4
     FinalActionSeg:
       actionVarName: Look1
-      targetVarName: agent0
+      targetVarName: agent1 agent0
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 4
+      screenxy: 4
+      directive: 4
     InitialCamAction:
       CamDetails:
         scale: 3
@@ -21029,20 +21958,22 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 6
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: 
+        location: arrive0
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Look0
-          targetVarName: agent1
+          targetVarName: agent0 agent1
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -21050,20 +21981,22 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 4
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: 
+        location: arrive1
         orientTowards: arrive0
         ActionSegs:
         - actionVarName: Look1
-          targetVarName: agent0
+          targetVarName: agent1 agent0
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -21618,6 +22551,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832b12a556ce1df49989bb06b6d816cc, type: 3}
   m_Name: SteeringAsset
   m_EditorClassIdentifier: 
+--- !u!114 &815379934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1406621dea8224cba3435dd3c72b7b, type: 3}
+  m_Name: SteeringAsset
+  m_EditorClassIdentifier: 
+  Boid:
+    exposedName: 4d91f7a4c5f9b7e4e8122001d179bbc3
+    defaultValue: {fileID: 0}
+  arrive: 1
+  depart: 1
+  master: 1
+  startPos: {x: 11.38, y: 0.45499998, z: -4.08}
+  endPos: {x: -6.94, y: 0.45499998, z: -4.17}
 --- !u!114 &817607216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -22564,6 +23516,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -22576,8 +23530,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.54
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -22586,14 +23540,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -22601,6 +23557,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -22608,7 +23566,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -22616,6 +23573,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -22623,7 +23582,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -22747,6 +23705,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd2ba7ab86ef9946858f8acd7c483b2, type: 3}
   m_Name: OrientToObjectAsset
   m_EditorClassIdentifier: 
+--- !u!114 &865589733
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
+  m_Name: CinemachineShot
+  m_EditorClassIdentifier: 
+  VirtualCamera:
+    exposedName: bb3142fbcedabfc449953a847cbc5df5
+    defaultValue: {fileID: 0}
 --- !u!1 &868946617
 GameObject:
   m_ObjectHideFlags: 0
@@ -22812,6 +23784,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 2
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -22824,14 +23798,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.73
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.37
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -22840,14 +23815,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -22855,6 +23832,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -22862,7 +23841,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -22870,6 +23848,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -22877,7 +23857,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -22956,6 +23935,23 @@ MonoBehaviour:
     exposedName: 1d4bf6f8898c47d49bc4d7ae6ed1ee0f
     defaultValue: {fileID: 0}
   newTime: 6.3131313
+--- !u!114 &870674198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a60391a06b4eb428176d0894625057, type: 3}
+  m_Name: CamFocusAsset
+  m_EditorClassIdentifier: 
+  CCB:
+    exposedName: 67070e62b2374e84ba605f69c6387917
+    defaultValue: {fileID: 0}
+  Target:
+    exposedName: 2fd8f4b566586f844830349e741c9c65
+    defaultValue: {fileID: 0}
 --- !u!114 &871947921
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23457,6 +24453,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 4
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -23469,8 +24467,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.12
-        screenxz: 4
-    directive: 1
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -23479,6 +24477,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 4
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -23491,22 +24491,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.12
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Looky
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.12
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Looky
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.12
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 3
@@ -23514,6 +24516,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 4
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -23526,8 +24530,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.12
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -23535,6 +24539,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 4
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -23547,8 +24553,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.12
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -25065,6 +26071,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 2
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -25077,8 +26085,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -25087,14 +26095,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -25102,6 +26112,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25109,7 +26121,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -25117,6 +26128,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25124,7 +26137,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -25341,13 +26353,14 @@ MonoBehaviour:
   - orig0
   - orig1
   FabulaStepNames:
-  - (Stroll agent0 orig0 arrive0)-4369
-  - (Look agent0 arrive0 arrive1)-4370
-  - (Stroll agent1 orig1 arrive1)-4371
-  - (Look agent1 arrive1 arrive0)-4372
+  - (Stroll agent0 orig0 arrive0)-2345
+  - (Look agent0 arrive0 arrive1)-2346
+  - (Stroll agent1 orig1 arrive1)-2347
+  - (Look agent1 arrive1 arrive0)-2348
   DiscourseStepNames:
-  - ( Waist h315 Eye )-4373
-  - ( Waist h85 Eye )-4374
+  - ( ExtremeLong h0 High )-2349
+  - ( Waist h315 Eye )-2350
+  - ( Waist h85 Eye )-2351
   NonEqualities:
   - first: 0
     second: 1
@@ -25374,6 +26387,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -25382,18 +26397,20 @@ MonoBehaviour:
       orientTowards: arrive1
       ActionSegs:
       - actionVarName: Arrive
-        targetVarName: agent1
+        targetVarName: agent1 arrive1
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.79
-        screenxz: 4
-    directive: 4
+        screenxy: 4
+        directive: 4
   - CamDetails:
       scale: 3
       targetLocation: 
       targetOrientation: 0
       hangle: 8
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -25406,20 +26423,23 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.79
         endPercent: 1
-        screenxz: 4
+        screenxy: 4
+        directive: 2
       - actionVarName: Look0
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 4
-    directive: 2
+        screenxy: 4
+        directive: 2
   - CamDetails:
       scale: 3
       targetLocation: 
       targetOrientation: 0
       hangle: 3
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -25428,18 +26448,19 @@ MonoBehaviour:
       orientTowards: arrive0
       ActionSegs:
       - actionVarName: Arrive2
-        targetVarName: agent0
+        targetVarName: agent1
         actiontypeID: 0
         startPercent: 0.81
         endPercent: 1
-        screenxz: 4
+        screenxy: 4
+        directive: 2
       - actionVarName: Look1
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.73
-        screenxz: 4
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -25448,6 +26469,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 1
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25456,18 +26479,20 @@ MonoBehaviour:
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Arrive
-          targetVarName: agent1
+          targetVarName: agent1 arrive1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.79
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
     - CamDetails:
         scale: 3
         targetLocation: 
         targetOrientation: 0
         hangle: 8
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25480,20 +26505,23 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.79
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: Look0
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
     - CamDetails:
         scale: 3
         targetLocation: 
         targetOrientation: 0
         hangle: 3
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25502,32 +26530,35 @@ MonoBehaviour:
         orientTowards: arrive0
         ActionSegs:
         - actionVarName: Arrive2
-          targetVarName: agent0
+          targetVarName: agent1
           actiontypeID: 0
           startPercent: 0.81
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: Look1
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.73
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Arrive
-      targetVarName: agent1
+      targetVarName: agent1 arrive1
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.79
-      screenxz: 4
+      screenxy: 4
+      directive: 4
     FinalActionSeg:
       actionVarName: Look1
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.73
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 6
@@ -25535,6 +26566,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 1
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25543,12 +26576,12 @@ MonoBehaviour:
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Arrive
-          targetVarName: agent1
+          targetVarName: agent1 arrive1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.79
-          screenxz: 4
-      directive: 4
+          screenxy: 4
+          directive: 4
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -25556,6 +26589,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 3
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25564,18 +26599,19 @@ MonoBehaviour:
         orientTowards: arrive0
         ActionSegs:
         - actionVarName: Arrive2
-          targetVarName: agent0
+          targetVarName: agent1
           actiontypeID: 0
           startPercent: 0.81
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: Look1
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.73
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -25903,6 +26939,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 8
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -25915,14 +26953,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.69
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.4
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -25931,14 +26970,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -25946,6 +26987,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25953,7 +26996,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -25961,6 +27003,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -25968,7 +27012,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -26322,6 +27365,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 5
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -26334,8 +27379,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 3
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -26344,14 +27389,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -26359,6 +27406,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -26366,7 +27415,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -26374,6 +27422,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -26381,7 +27431,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -27350,6 +28399,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 6
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -27362,8 +28413,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -27372,14 +28423,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -27387,6 +28440,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -27394,7 +28449,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -27402,6 +28456,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -27409,7 +28465,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -28647,6 +29702,140 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Long of (PickUp Boid Block2 L1 L3)-497 from 0 to 0.54
     m_Version: 1
+--- !u!114 &1072090348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: pan_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 289206728}
+    m_UnderlyingAsset: {fileID: 289206728}
+    m_Duration: 2.9930498600006104
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1072090348}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0 to 0.47
+    m_Version: 1
+  - m_Start: 2.9930498600006104
+    m_ClipIn: 0
+    m_Asset: {fileID: 1313689451}
+    m_UnderlyingAsset: {fileID: 1313689451}
+    m_Duration: 3.375141143798828
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1072090348}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0.47 to 1
+    m_Version: 1
 --- !u!114 &1075536916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29472,29 +30661,26 @@ MonoBehaviour:
   heightMax: 2
   cutoffTime: 100000
   PlanSteps:
-  - (initial)-14656
-  - (DummyInit)-15007
-  - (DummyInit)-15010
-  - (DummyInit)-19085
-  - ( Long h45 High )-19088
-  - (Stroll OrangeBoid L3 L2)-19087
-  - (DummyGoal)-19086
-  - ( ExtremeLong h45 High )-15016
-  - ( Waist h315 Eye )-15017
-  - ( Waist h85 Eye )-15018
-  - (Look OrangeBoid L2 L1)-15015
-  - (Stroll BlueBoid L0 L1)-15012
-  - (Look BlueBoid L1 L2)-15013
-  - (DummyGoal)-15011
-  - (DummyGoal)-15008
-  - (DummyInit)-14776
-  - (DummyInit)-14808
-  - ( Full h0 High )-14811
-  - (Race BlueBoid L1 L3)-14810
-  - (DummyGoal)-14809
-  - ( Waist h85 Eye )-14779
-  - (DummyGoal)-14777
-  - (goal)-14657
+  - (initial)-9389
+  - (DummyInit)-9845
+  - (DummyInit)-10135
+  - ( Long h45 High )-10138
+  - (Stroll OrangeBoid L3 L2)-10137
+  - (DummyGoal)-10136
+  - ( ExtremeLong h0 High )-9851
+  - ( Waist h315 Eye )-9852
+  - ( Waist h85 Eye )-9853
+  - (Look OrangeBoid L2 L1)-9850
+  - (Stroll BlueBoid L0 L1)-9847
+  - (Look BlueBoid L1 L2)-9848
+  - (DummyGoal)-9846
+  - (DummyInit)-9412
+  - ( Waist h195 Eye )-9416
+  - ( Waist h165 Eye )-9417
+  - (Look BlueBoid L1 L2)-9414
+  - (Look OrangeBoid L2 L1)-9415
+  - (DummyGoal)-9413
+  - (goal)-9390
 --- !u!114 &1110181542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29673,6 +30859,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 2
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -29685,8 +30873,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.23
-        screenxz: 4
-    directive: 1
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -29695,6 +30883,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 2
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -29707,22 +30897,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Action
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.23
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Action
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.23
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 5
@@ -29730,6 +30922,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 2
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -29742,8 +30936,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 5
@@ -29751,6 +30945,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 2
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -29763,8 +30959,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -29773,6 +30969,112 @@ MonoBehaviour:
   reset: 0
   testOne: 0
   visualizeTest: 0
+--- !u!1 &1118513527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1118513531}
+  - component: {fileID: 1118513530}
+  - component: {fileID: 1118513529}
+  - component: {fileID: 1118513528}
+  m_Layer: 0
+  m_Name: L2.Long.o210.h45.High
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1118513528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118513527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39410880a5345bc498fcd95b4edeea7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetLocation: L2
+  targetOrientation: 15
+  scale: 5
+  hangle: 2
+  vangle: 3
+--- !u!114 &1118513529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118513527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc760389b7e4084296e23c7bc41f9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitOfMeasure: 0
+  _filmFormatName: 
+  _screenSizeName: 
+  _nodalCamera: {fileID: 1118513530}
+  _dofComponents: []
+  _focusTransform: {fileID: 0}
+  _rigTransform: {fileID: 0}
+  _fpOffset: {x: 0, y: 0, z: 0}
+  _fstopIndex: 7
+  _lensIndex: 6
+  _lensKitIndex: 0
+  _cameraSpecs: 
+  _cameraDesc: 
+  _lensKitName: 
+  _dofFarLimit: -7.64
+  _dofNearLimit: 4.81
+  _dofDistTotal: -12.46
+  _focusDist: 7.930108
+  _centerOnSubject: 0
+  _clickToFocus: 0
+  _showGizmos: 0
+  ShowBody: 0
+--- !u!114 &1118513530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118513527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 38.607
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+  m_ComponentOwner: {fileID: 1170173436}
+--- !u!4 &1118513531
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118513527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.402464, y: 5.6074333, z: -3.9598958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1170173436}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1121241187
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30865,6 +32167,24 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: ExtremeLong of Race from 0.73 to 1
     m_Version: 1
+--- !u!114 &1155142388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: lerpTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 1908452880}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &1155650565
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31247,6 +32567,222 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: L3.Long.o180.h275.High(Clone)
     m_Version: 1
+--- !u!114 &1168206355
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: timeTravelTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 219536507}
+    m_UnderlyingAsset: {fileID: 219536507}
+    m_Duration: 2.873049736022949
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1168206355}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: 'L0-L1_1.Waist.o180.h0.Eye_//_Stroll_// focusOn: BlueBoid// achor:
+      L0-L1_1'
+    m_Version: 1
+  - m_Start: 2.9930498600006104
+    m_ClipIn: 0
+    m_Asset: {fileID: 539731718}
+    m_UnderlyingAsset: {fileID: 539731718}
+    m_Duration: 3.255141258239746
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1168206355}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: 'L1.Waist.o180.h180.Eye_//_Stroll_// focusOn: BlueBoid// achor:
+      L1'
+    m_Version: 1
+--- !u!1 &1170173435
+GameObject:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1170173436}
+  - component: {fileID: 1170173439}
+  - component: {fileID: 1170173438}
+  - component: {fileID: 1170173437}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1170173436
+Transform:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170173435}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1118513531}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170173437
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170173435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 0}
+  m_AmplitudeGain: 0.5
+  m_FrequencyGain: 1
+--- !u!114 &1170173438
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170173435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0.2
+  m_LookaheadSmoothing: 10
+  m_HorizontalDamping: 0.2
+  m_VerticalDamping: 0.2
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_DeadZoneWidth: 0.25
+  m_DeadZoneHeight: 0.25
+  m_SoftZoneWidth: 1.5
+  m_SoftZoneHeight: 1.5
+  m_BiasX: 0
+  m_BiasY: 0
+--- !u!114 &1170173439
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170173435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1170374986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32163,6 +33699,25 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: steer BlueBoid L1 L3
     m_Version: 1
+--- !u!114 &1193721585
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1406621dea8224cba3435dd3c72b7b, type: 3}
+  m_Name: SteeringAsset
+  m_EditorClassIdentifier: 
+  Boid:
+    exposedName: cf71d0ddb8a63164396d685ae20f446f
+    defaultValue: {fileID: 0}
+  arrive: 1
+  depart: 0
+  master: 0
+  startPos: {x: 2.7696, y: 0.45499998, z: -4.1223}
+  endPos: {x: -6.94, y: 0.45499998, z: -4.17}
 --- !u!114 &1194050153
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32247,6 +33802,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 4
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -32259,8 +33816,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -32269,14 +33826,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -32284,6 +33843,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -32291,7 +33852,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -32299,6 +33859,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -32306,7 +33868,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -33845,6 +35406,8 @@ MonoBehaviour:
       targetOrientation: -1
       hangle: 45
       vangle: 0
+      distance: 0
+      height: 0
     CamObject: L7.Waist.0.45.0
     TargetDetails:
       orient: 0
@@ -33857,8 +35420,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.58
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -33867,14 +35430,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -33882,6 +35447,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -33889,7 +35456,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -33897,6 +35463,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -33904,7 +35472,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -35194,6 +36761,23 @@ MonoBehaviour:
     defaultValue: {fileID: 0}
   Parent:
     exposedName: 
+    defaultValue: {fileID: 0}
+--- !u!114 &1313689451
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab8e19bb785c25469fedcbbaf40ce25, type: 3}
+  m_Name: CamPanAsset
+  m_EditorClassIdentifier: 
+  CVC:
+    exposedName: 69f9bb8e05a4560448e14240cc40b1dc
+    defaultValue: {fileID: 0}
+  Target:
+    exposedName: cc7d67fe24f23524fa76efcc37fa5d24
     defaultValue: {fileID: 0}
 --- !u!114 &1314057937
 MonoBehaviour:
@@ -36570,6 +38154,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 2
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -36582,8 +38168,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.32
         endPercent: 0.69
-        screenxz: 0
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -36592,14 +38178,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -36607,6 +38195,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -36614,7 +38204,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -36622,6 +38211,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -36629,7 +38220,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -37050,6 +38640,25 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Long of (PutDown Boid Block2 L3 L1)-2366 from 0.54 to 1
     m_Version: 1
+--- !u!114 &1409244104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1406621dea8224cba3435dd3c72b7b, type: 3}
+  m_Name: SteeringAsset
+  m_EditorClassIdentifier: 
+  Boid:
+    exposedName: a0c29d19ff46dfe46a11d20465b3d1d2
+    defaultValue: {fileID: 0}
+  arrive: 0
+  depart: 1
+  master: 0
+  startPos: {x: -6.94, y: 0.45499998, z: -4.17}
+  endPos: {x: -6.94, y: 0.45499998, z: -4.17}
 --- !u!114 &1409443256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -37474,6 +39083,24 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Long of (PutDown Boid Block2 L3 L1)-6840 from 0.54 to 1
     m_Version: 1
+--- !u!114 &1427393408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: orientTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 1908452880}
+  m_Children: []
+  m_Clips: []
 --- !u!114 &1427541611
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -37674,7 +39301,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 1.1692980457841102
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -37695,19 +39322,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -37722,32 +39337,20 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: steer OrangeBoid L3 L2
     m_Version: 1
-  - m_Start: 7.0563055063150175
+  - m_Start: 4.767007463213116
     m_ClipIn: 0
-    m_Asset: {fileID: 48712323}
-    m_UnderlyingAsset: {fileID: 48712323}
-    m_Duration: 6.248191030644658
+    m_Asset: {fileID: 1083510512}
+    m_UnderlyingAsset: {fileID: 1083510512}
+    m_Duration: 1.1392980464546625
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1447619775}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 1.1692980457841102
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -37778,7 +39381,99 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
+    m_DisplayName: steer OrangeBoid L3 L2-continued
+    m_Version: 1
+  - m_Start: 7.0563055063150175
+    m_ClipIn: 0
+    m_Asset: {fileID: 48712323}
+    m_UnderlyingAsset: {fileID: 48712323}
+    m_Duration: 6.248191030644658
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1447619775}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 1.3673201152015615
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
     m_DisplayName: steer BlueBoid L0 L1
+    m_Version: 1
+  - m_Start: 11.937176421758114
+    m_ClipIn: 0
+    m_Asset: {fileID: 1330634589}
+    m_UnderlyingAsset: {fileID: 1330634589}
+    m_Duration: 1.3373201158721137
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1447619775}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 1.3673201152015615
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: steer BlueBoid L0 L1-continued
     m_Version: 1
   - m_Start: 14.424496534277466
     m_ClipIn: 0
@@ -37838,16 +39533,141 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: steer BlueBoid L1 L3
     m_Version: 1
-  - m_Start: 11.937176421758114
+--- !u!114 &1456069672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e98bc4e32ccfb4c8c32f7051770834, type: 3}
+  m_Name: TimeTravelAsset
+  m_EditorClassIdentifier: 
+--- !u!114 &1458926964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1670381969, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ControlPlayableAsset
+  m_EditorClassIdentifier: 
+  sourceGameObject:
+    exposedName: fafd1e734441d8241bfde23c848f335b
+    defaultValue: {fileID: 0}
+  prefabGameObject: {fileID: 0}
+  updateParticle: 1
+  particleRandomSeed: 1045
+  updateDirector: 1
+  updateITimeControl: 1
+  searchHierarchy: 1
+  active: 1
+  postPlayback: 2
+--- !u!114 &1461780979
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fef1f4cfffffb44b0716e0a1c60177, type: 3}
+  m_Name: CamScreenCompositionAsset
+  m_EditorClassIdentifier: 
+  CVC:
+    exposedName: 464899810c0959b4ba04e4c5ed2fee27
+    defaultValue: {fileID: 0}
+  x: 0.5
+  y: 0.5
+--- !u!114 &1462949192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: steerTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 1908452880}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0.05999999865889549
     m_ClipIn: 0
-    m_Asset: {fileID: 1330634589}
-    m_UnderlyingAsset: {fileID: 1330634589}
-    m_Duration: 1.3373201158721137
+    m_Asset: {fileID: 815379934}
+    m_UnderlyingAsset: {fileID: 815379934}
+    m_Duration: 6.248191030644658
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 1447619775}
+    m_ParentTrack: {fileID: 1462949192}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
+    m_BlendOutDuration: 3.405141244149546
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: steer BlueBoid L0 L1
+    m_Version: 1
+  - m_Start: 2.9030497851540074
+    m_ClipIn: 0
+    m_Asset: {fileID: 1193721585}
+    m_UnderlyingAsset: {fileID: 1193721585}
+    m_Duration: 3.375141244820098
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1462949192}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 3.405141244149546
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -37896,13 +39716,13 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: steer BlueBoid L0 L1-continued
     m_Version: 1
-  - m_Start: 4.767007463213116
+  - m_Start: 6.428191026621344
     m_ClipIn: 0
-    m_Asset: {fileID: 1083510512}
-    m_UnderlyingAsset: {fileID: 1083510512}
-    m_Duration: 1.1392980464546625
+    m_Asset: {fileID: 1409244104}
+    m_UnderlyingAsset: {fileID: 1409244104}
+    m_Duration: 0.18000001460313797
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 1447619775}
+    m_ParentTrack: {fileID: 1462949192}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -37952,69 +39772,8 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: steer OrangeBoid L3 L2-continued
+    m_DisplayName: follow up
     m_Version: 1
---- !u!114 &1456069672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e98bc4e32ccfb4c8c32f7051770834, type: 3}
-  m_Name: TimeTravelAsset
-  m_EditorClassIdentifier: 
---- !u!114 &1458926964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1670381969, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: ControlPlayableAsset
-  m_EditorClassIdentifier: 
-  sourceGameObject:
-    exposedName: fafd1e734441d8241bfde23c848f335b
-    defaultValue: {fileID: 0}
-  prefabGameObject: {fileID: 0}
-  updateParticle: 1
-  particleRandomSeed: 1045
-  updateDirector: 1
-  updateITimeControl: 1
-  searchHierarchy: 1
-  active: 1
-  postPlayback: 2
---- !u!1 &1465343410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1465343411}
-  m_Layer: 0
-  m_Name: L0-L1_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1465343411
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1465343410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8, y: -0.44123173, z: -4.1025}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1466353544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -38284,6 +40043,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 6
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -38296,8 +40057,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.76
         endPercent: 1
-        screenxz: 0
-    directive: 1
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -38306,6 +40067,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 6
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -38318,22 +40081,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 0
-      directive: 1
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Action1
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.76
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Action1
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.76
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 3
@@ -38341,6 +40106,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 6
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -38353,8 +40120,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 0
-      directive: 1
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 3
@@ -38362,6 +40129,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 6
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -38374,8 +40143,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.76
           endPercent: 1
-          screenxz: 0
-      directive: 1
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -38478,6 +40247,140 @@ MonoBehaviour:
   m_Parent: {fileID: 350069028}
   m_Children: []
   m_Clips: []
+--- !u!114 &1489541883
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: screen_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 1461780979}
+    m_UnderlyingAsset: {fileID: 1461780979}
+    m_Duration: 2.9930498600006104
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1489541883}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0 to 0.47
+    m_Version: 1
+  - m_Start: 2.9930498600006104
+    m_ClipIn: 0
+    m_Asset: {fileID: 711685669}
+    m_UnderlyingAsset: {fileID: 711685669}
+    m_Duration: 3.375141143798828
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1489541883}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Waist of Stroll from 0.47 to 1
+    m_Version: 1
 --- !u!1 &1491249998
 GameObject:
   m_ObjectHideFlags: 0
@@ -38609,6 +40512,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -38621,8 +40526,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.6
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -38631,14 +40536,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -38646,6 +40553,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -38653,7 +40562,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -38661,6 +40569,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -38668,7 +40578,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -39465,19 +41374,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compilePrimitiveSteps: 0
-  compileCompositeSteps: 0
-  regenerateInitialPlanWithComposite: 0
-  checkEffects: 0
   PrimitiveSteps: 48
   DecompositionSchemata:
-  - {fileID: 1652513192}
-  - {fileID: 423817667}
+  - {fileID: 971130069}
   - {fileID: 1117598703}
   - {fileID: 886131063}
-  - {fileID: 971130069}
-  - {fileID: 1906396838}
   - {fileID: 799360122}
-  CompositeSteps: 0
 --- !u!4 &1532448784
 Transform:
   m_ObjectHideFlags: 0
@@ -39504,7 +41406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UGAF: {fileID: 1532448783}
   UPC: {fileID: 1609610434}
-  problemname: duel3Test
+  problemname: duel6Test
   cacheIt: 0
   decacheIt: 0
   justCacheMapsAndEffort: 0
@@ -39676,6 +41578,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537462163}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1538235971
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: attachTrack
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 502643225}
+  m_Children: []
+  m_Clips: []
 --- !u!1 &1541384840
 GameObject:
   m_ObjectHideFlags: 0
@@ -42211,6 +44131,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -42223,8 +44145,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.54
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -42233,14 +44155,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -42248,6 +44172,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -42255,7 +44181,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -42263,6 +44188,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -42270,7 +44197,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -43218,6 +45144,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -43230,8 +45158,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.23
-        screenxz: 4
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -43240,6 +45168,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 1
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -43252,22 +45182,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Action
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.23
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Action
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.23
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 4
@@ -43275,6 +45207,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 1
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -43287,8 +45221,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 4
@@ -43296,6 +45230,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 1
         vangle: 3
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -43308,8 +45244,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.23
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -43674,6 +45610,86 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7e98bc4e32ccfb4c8c32f7051770834, type: 3}
   m_Name: TimeTravelAsset
+  m_EditorClassIdentifier: 
+--- !u!1 &1686957645
+GameObject:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1686957646}
+  - component: {fileID: 1686957649}
+  - component: {fileID: 1686957648}
+  - component: {fileID: 1686957647}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686957646
+Transform:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686957645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2027466883}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1686957647
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686957645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 0}
+  m_AmplitudeGain: 0.5
+  m_FrequencyGain: 1
+--- !u!114 &1686957648
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686957645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0.2
+  m_LookaheadSmoothing: 10
+  m_HorizontalDamping: 0.2
+  m_VerticalDamping: 0.2
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_DeadZoneWidth: 0.25
+  m_DeadZoneHeight: 0.25
+  m_SoftZoneWidth: 1.5
+  m_SoftZoneHeight: 1.5
+  m_BiasX: 0
+  m_BiasY: 0
+--- !u!114 &1686957649
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686957645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1688837284
 MonoBehaviour:
@@ -44317,6 +46333,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 2
       vangle: 2
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -44329,8 +46347,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -44339,14 +46357,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -44354,6 +46374,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -44361,7 +46383,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -44369,6 +46390,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -44376,7 +46399,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -46117,6 +48139,8 @@ MonoBehaviour:
       targetOrientation: -1
       hangle: 85
       vangle: 0
+      distance: 0
+      height: 0
     CamObject: L7.ExtremeCloseUp.0.85.0
     TargetDetails:
       orient: 0
@@ -46129,8 +48153,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -46139,14 +48163,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -46154,6 +48180,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -46161,7 +48189,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -46169,6 +48196,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -46176,7 +48205,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -46679,6 +48707,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -46691,8 +48721,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.24
         endPercent: 0.78
-        screenxz: 0
-    directive: 1
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -46701,14 +48731,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -46716,6 +48748,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -46723,7 +48757,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -46731,6 +48764,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -46738,7 +48773,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -47696,18 +49730,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a1ccf63467014bbbeac87d9e0d4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions:
-  - {fileID: 1729987342}
-  - {fileID: 331032067}
-  - {fileID: 805926700}
-  initiated: 1
+  genericActor: {fileID: 1206460547}
+  TestCam:
+    actor: {fileID: 1206460547}
+    location: {fileID: 1555322833}
+    orient: 15
+    hangle: 2
+    vangle: 3
+    scale: 5
+    setBySchema: 0
+    heightForTest: 5.607
+    distForTest: 7.93
+  createTestCam: 0
+  cacheFileName: raceworlddueltest(2)
   assembleCameras: 0
-  recheckCamerasForVisibility: 0
-  numCams: 0
+  numCams: 32870
   refresh: 0
-  deleteChildren: 0
   activateAllCams: 0
-  cacheFileName: raceworld
   cacheCams: 0
   decacheCams: 0
 --- !u!114 &1797034395
@@ -47852,6 +49891,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 4
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -47864,14 +49905,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.65
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.67
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -47880,14 +49922,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -47895,6 +49939,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -47902,7 +49948,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -47910,6 +49955,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -47917,7 +49964,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -50700,8 +52746,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 1894400754}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -50758,8 +52804,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 1894400754}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -50816,8 +52862,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 1894400754}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -51738,6 +53784,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -51750,20 +53798,23 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.48
         endPercent: 1
-        screenxz: 4
+        screenxy: 4
+        directive: 2
       - actionVarName: LookX
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.18
-        screenxz: 4
-    directive: 1
+        screenxy: 4
+        directive: 2
   - CamDetails:
       scale: 3
       targetLocation: 
       targetOrientation: 0
       hangle: 1
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -51776,26 +53827,30 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.18
         endPercent: 1
-        screenxz: 4
+        screenxy: 4
+        directive: 2
       - actionVarName: LookX2
         targetVarName: agent
         actiontypeID: 0
         startPercent: 0
         endPercent: 1
-        screenxz: 4
+        screenxy: 4
+        directive: 2
       - actionVarName: Depart
         targetVarName: agent
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.11
-        screenxz: 4
-    directive: 1
+        screenxy: 4
+        directive: 2
   - CamDetails:
       scale: 4
       targetLocation: 
       targetOrientation: 0
       hangle: 7
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -51808,8 +53863,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.11
         endPercent: 0.43
-        screenxz: 4
-    directive: 2
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps:
     - CamDetails:
@@ -51818,6 +53873,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 7
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -51830,20 +53887,23 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.48
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: LookX
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.18
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     - CamDetails:
         scale: 3
         targetLocation: 
         targetOrientation: 0
         hangle: 1
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -51856,26 +53916,30 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.18
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: LookX2
           targetVarName: agent
           actiontypeID: 0
           startPercent: 0
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: Depart
           targetVarName: agent
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.11
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     - CamDetails:
         scale: 4
         targetLocation: 
         targetOrientation: 0
         hangle: 7
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -51888,22 +53952,24 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.11
           endPercent: 0.43
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
     InitialActionSeg:
       actionVarName: Arrive
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.48
       endPercent: 1
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: Depart
       targetVarName: 
       actiontypeID: 0
       startPercent: 0.11
       endPercent: 0.43
-      screenxz: 4
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 4
@@ -51911,6 +53977,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 7
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -51923,14 +53991,15 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.48
           endPercent: 1
-          screenxz: 4
+          screenxy: 4
+          directive: 2
         - actionVarName: LookX
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.18
-          screenxz: 4
-      directive: 1
+          screenxy: 4
+          directive: 2
     FinalCamAction:
       CamDetails:
         scale: 4
@@ -51938,6 +54007,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 7
         vangle: 1
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -51950,8 +54021,8 @@ MonoBehaviour:
           actiontypeID: 0
           startPercent: 0.11
           endPercent: 0.43
-          screenxz: 4
-      directive: 2
+          screenxy: 4
+          directive: 2
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -52113,6 +54184,28 @@ MonoBehaviour:
   searchHierarchy: 1
   active: 1
   postPlayback: 2
+--- !u!114 &1908452880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NextId: 0
+  m_Tracks:
+  - {fileID: 1462949192}
+  - {fileID: 1427393408}
+  - {fileID: 1155142388}
+  - {fileID: 551851435}
+  - {fileID: 1978435169}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+  m_DurationMode: 0
 --- !u!114 &1908656706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52682,6 +54775,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 0
       vangle: -30
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: -1
@@ -52694,14 +54789,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.83
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.67
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -52710,14 +54806,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -52725,6 +54823,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -52732,7 +54832,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -52740,6 +54839,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -52747,7 +54848,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -54160,6 +56260,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9249df34492884a8c9a4ec4ca9f29d, type: 3}
   m_Name: CamFocusAsset
   m_EditorClassIdentifier: 
+--- !u!114 &1978435169
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1095772578, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: control_track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 1908452880}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 287465690}
+    m_UnderlyingAsset: {fileID: 287465690}
+    m_Duration: 6.368191027962449
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1978435169}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: playing timeline Stroll
+    m_Version: 1
 --- !u!114 &1984883869
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54604,6 +56780,7 @@ Transform:
   - {fileID: 1485888005}
   - {fileID: 886131061}
   - {fileID: 799360121}
+  - {fileID: 238069762}
   m_Father: {fileID: 63597726}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54739,6 +56916,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e98bc4e32ccfb4c8c32f7051770834, type: 3}
   m_Name: TimeTravelAsset
   m_EditorClassIdentifier: 
+--- !u!1 &2027466879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2027466883}
+  - component: {fileID: 2027466882}
+  - component: {fileID: 2027466881}
+  - component: {fileID: 2027466880}
+  m_Layer: 0
+  m_Name: L2.Long.o210.h45.High
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2027466880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027466879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39410880a5345bc498fcd95b4edeea7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetLocation: L2
+  targetOrientation: 15
+  scale: 5
+  hangle: 2
+  vangle: 3
+--- !u!114 &2027466881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027466879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc760389b7e4084296e23c7bc41f9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitOfMeasure: 0
+  _filmFormatName: 
+  _screenSizeName: 
+  _nodalCamera: {fileID: 2027466882}
+  _dofComponents: []
+  _focusTransform: {fileID: 0}
+  _rigTransform: {fileID: 0}
+  _fpOffset: {x: 0, y: 0, z: 0}
+  _fstopIndex: 7
+  _lensIndex: 6
+  _lensKitIndex: 0
+  _cameraSpecs: 
+  _cameraDesc: 
+  _lensKitName: 
+  _dofFarLimit: -7.64
+  _dofNearLimit: 4.81
+  _dofDistTotal: -12.46
+  _focusDist: 7.93
+  _centerOnSubject: 0
+  _clickToFocus: 0
+  _showGizmos: 0
+  ShowBody: 0
+--- !u!114 &2027466882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027466879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 38.607
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+  m_ComponentOwner: {fileID: 1686957646}
+--- !u!4 &2027466883
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027466879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.402435, y: 5.607, z: -3.9597914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1686957646}
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2030531930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55040,7 +57323,7 @@ PlayableDirector:
   m_GameObject: {fileID: 2052764173}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 633060418}
+  m_PlayableAsset: {fileID: 1908452880}
   m_InitialState: 0
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
@@ -55418,6 +57701,26 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 1091936825}
     value: {fileID: 0}
+  - key: {fileID: 1447619775}
+    value: {fileID: 0}
+  - key: {fileID: 110238517}
+    value: {fileID: 0}
+  - key: {fileID: 2091842474}
+    value: {fileID: 0}
+  - key: {fileID: 2109043833}
+    value: {fileID: 0}
+  - key: {fileID: 1894400754}
+    value: {fileID: 0}
+  - key: {fileID: 1462949192}
+    value: {fileID: 0}
+  - key: {fileID: 1427393408}
+    value: {fileID: 0}
+  - key: {fileID: 1155142388}
+    value: {fileID: 0}
+  - key: {fileID: 551851435}
+    value: {fileID: 0}
+  - key: {fileID: 1978435169}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 79913b03523d03643ab6d9183c81ab4f: {fileID: 0}
@@ -55615,6 +57918,7 @@ PlayableDirector:
     - 7a4c683b168b6574aa52a8173a725c40: {fileID: 0}
     - ac357cb1619a72a45a27522948e5b7e2: {fileID: 0}
     - 0ad25ce5f3b537e418c6d49713bf2f03: {fileID: 0}
+    - 4d91f7a4c5f9b7e4e8122001d179bbc3: {fileID: 590875761}
     - 02028cb39d561f74983b190ed697e1ff: {fileID: 0}
     - 919be96c7ad62834db3da8b263a0c127: {fileID: 0}
     - 974c0cef3ed954a46ad5198d8d5b4618: {fileID: 0}
@@ -55722,6 +58026,7 @@ PlayableDirector:
     - 0b21a15df0b7de8418c28969ef95350e: {fileID: 0}
     - dd5c8f7ec191c9548b1493c452b06d54: {fileID: 0}
     - 8e4654c066b314442b043d6649c0ff7f: {fileID: 0}
+    - cf71d0ddb8a63164396d685ae20f446f: {fileID: 590875761}
     - 23c516492d3585d4bacb94605afc5d18: {fileID: 0}
     - 5954a957c1ab24141aaca0226e09343d: {fileID: 0}
     - c94e34202105f3e489d6ab35264ec37b: {fileID: 0}
@@ -55907,6 +58212,7 @@ PlayableDirector:
     - 3774b10ff138de742a501119e407fb57: {fileID: 0}
     - 369d8454e5da85e4e84b62ac867a5628: {fileID: 0}
     - 0be9cc529fb657b4facddadc1742ba9b: {fileID: 0}
+    - a0c29d19ff46dfe46a11d20465b3d1d2: {fileID: 590875761}
     - b18698fc0208143449cf566d9394ebce: {fileID: 0}
     - 3f22a8351d5060e4ea75e4a005960465: {fileID: 0}
     - ceb19668d55172347824d44a2a63f549: {fileID: 0}
@@ -55923,6 +58229,7 @@ PlayableDirector:
     - aaa3c559caa6f9e43b3b71aa44d9a06c: {fileID: 0}
     - ef0fd9198531d994995731bbacbb8314: {fileID: 0}
     - d2ecf4aa036733d45a23bf5a227df75d: {fileID: 0}
+    - e565bb2452d53df48b33bac1dedfc9b5: {fileID: 0}
     - 46c9bdc419b83194699b5f43f4f86ce6: {fileID: 0}
     - 084bb9cf5dd390e44a2426f50f700fd1: {fileID: 0}
     - 4c293700d5fdcf546bb1218bc12803db: {fileID: 0}
@@ -56189,15 +58496,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4543025712908898, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4543025712908898, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4543025712908898, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4543025712908898, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
       propertyPath: m_LocalRotation.w
@@ -56212,6 +58519,10 @@ Prefab:
       propertyPath: defaultParent
       value: 
       objectReference: {fileID: 877619663}
+    - target: {fileID: 4543025712908898, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 637b87135938c504e9a31f320f99fefb, type: 2}
   m_IsPrefabParent: 0
@@ -56709,6 +59020,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 7
       vangle: 3
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -56721,8 +59034,8 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.54
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -56731,14 +59044,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -56746,6 +59061,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -56753,7 +59070,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -56761,6 +59077,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -56768,7 +59086,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -57152,14 +59469,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -57167,6 +59486,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57174,7 +59495,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -57182,6 +59502,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57189,7 +59511,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -57539,6 +59860,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 6
       vangle: 2
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -57551,14 +59874,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.38
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.67
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -57567,14 +59891,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -57582,6 +59908,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57589,7 +59917,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -57597,6 +59924,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57604,7 +59933,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -57739,6 +60067,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 1
       vangle: 1
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: 0
@@ -57751,14 +60081,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.15
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.78
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -57767,14 +60098,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -57782,6 +60115,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57789,7 +60124,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -57797,6 +60131,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -57804,7 +60140,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
@@ -58145,6 +60480,8 @@ MonoBehaviour:
       targetOrientation: 0
       hangle: 0
       vangle: -30
+      distance: 0
+      height: 0
     CamObject: 
     TargetDetails:
       orient: -1
@@ -58157,14 +60494,15 @@ MonoBehaviour:
         actiontypeID: 0
         startPercent: 0.83
         endPercent: 1
-        screenxz: 0
+        screenxy: 4
+        directive: 2
       - actionVarName: Action2
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.67
-        screenxz: 0
-    directive: 0
+        screenxy: 4
+        directive: 2
   PartialDecomp:
     discourseSubSteps: []
     InitialActionSeg:
@@ -58173,14 +60511,16 @@ MonoBehaviour:
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     FinalActionSeg:
       actionVarName: 
       targetVarName: 
       actiontypeID: 0
       startPercent: 0
       endPercent: 1
-      screenxz: 0
+      screenxy: 4
+      directive: 2
     InitialCamAction:
       CamDetails:
         scale: 0
@@ -58188,6 +60528,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -58195,7 +60537,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
     FinalCamAction:
       CamDetails:
         scale: 0
@@ -58203,6 +60544,8 @@ MonoBehaviour:
         targetOrientation: 0
         hangle: 0
         vangle: 0
+        distance: 0
+        height: 0
       CamObject: 
       TargetDetails:
         orient: 0
@@ -58210,7 +60553,6 @@ MonoBehaviour:
         location: 
         orientTowards: 
         ActionSegs: []
-      directive: 0
   NumGroundDecomps: 0
   readClips: 0
   setCamsAndLocs: 0
