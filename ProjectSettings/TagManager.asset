@@ -19,6 +19,8 @@ TagManager:
   - FabulaTimeline
   - LocationHost
   - Navigation
+  - Walkable
+  - Aux
   layers:
   - Default
   - TransparentFX

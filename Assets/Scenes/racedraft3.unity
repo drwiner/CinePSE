@@ -21797,11 +21797,11 @@ MonoBehaviour:
   - arrive0
   - arrive1
   FabulaStepNames:
-  - (Look agent0 arrive0 arrive1)-1320
-  - (Look agent1 arrive1 arrive0)-1321
+  - (Look agent0 arrive0 arrive1)-2436
+  - (Look agent1 arrive1 arrive0)-2437
   DiscourseStepNames:
-  - ( Waist h195 Eye )-1322
-  - ( Waist h165 Eye )-1323
+  - ( Waist h195 Eye )-2438[][GroupAim][agent0 agent1]
+  - ( Waist h165 Eye )-2439[][GroupAim][agent1 agent0]
   NonEqualities:
   - first: 0
     second: 1
@@ -21823,8 +21823,8 @@ MonoBehaviour:
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
-      location: arrive0
-      orientTowards: arrive1
+      location: 
+      orientTowards: 
       ActionSegs:
       - actionVarName: Look0
         targetVarName: agent0 agent1
@@ -21844,8 +21844,8 @@ MonoBehaviour:
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
-      location: arrive1
-      orientTowards: arrive0
+      location: 
+      orientTowards: 
       ActionSegs:
       - actionVarName: Look1
         targetVarName: agent1 agent0
@@ -21867,8 +21867,8 @@ MonoBehaviour:
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: arrive0
-        orientTowards: arrive1
+        location: 
+        orientTowards: 
         ActionSegs:
         - actionVarName: Look0
           targetVarName: agent0 agent1
@@ -21888,8 +21888,8 @@ MonoBehaviour:
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: arrive1
-        orientTowards: arrive0
+        location: 
+        orientTowards: 
         ActionSegs:
         - actionVarName: Look1
           targetVarName: agent1 agent0
@@ -21926,8 +21926,8 @@ MonoBehaviour:
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: arrive0
-        orientTowards: arrive1
+        location: 
+        orientTowards: 
         ActionSegs:
         - actionVarName: Look0
           targetVarName: agent0 agent1
@@ -21948,8 +21948,8 @@ MonoBehaviour:
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
-        location: arrive1
-        orientTowards: arrive0
+        location: 
+        orientTowards: 
         ActionSegs:
         - actionVarName: Look1
           targetVarName: agent1 agent0
@@ -24391,11 +24391,9 @@ MonoBehaviour:
   - origin
   - destination
   FabulaStepNames:
-  - (Look agent origin destination)-81385
-  - (Look agent origin destination)-81386
+  - (Look agent origin destination)-2930
   DiscourseStepNames:
-  - ( Waist h195 Eye )-81387
-  - ( Waist h0 Eye )-81388
+  - ( Waist h165 Eye )-2931[][Pan][]
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -26360,7 +26358,7 @@ MonoBehaviour:
       height: 0
     TargetDetails:
       orient: 0
-      actionSegOfFocus: 0
+      actionSegOfFocus: 1
       location: arrive0
       orientTowards: arrive1
       ActionSegs:
@@ -26388,7 +26386,7 @@ MonoBehaviour:
       height: 0
     TargetDetails:
       orient: 0
-      actionSegOfFocus: 0
+      actionSegOfFocus: 1
       location: arrive1
       orientTowards: arrive0
       ActionSegs:
@@ -26400,7 +26398,7 @@ MonoBehaviour:
         screenxy: 4
         directive: 2
       - actionVarName: Look1
-        targetVarName: 
+        targetVarName: agent1
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.73
@@ -26439,7 +26437,7 @@ MonoBehaviour:
         height: 0
       TargetDetails:
         orient: 0
-        actionSegOfFocus: 0
+        actionSegOfFocus: 1
         location: arrive0
         orientTowards: arrive1
         ActionSegs:
@@ -26467,7 +26465,7 @@ MonoBehaviour:
         height: 0
       TargetDetails:
         orient: 0
-        actionSegOfFocus: 0
+        actionSegOfFocus: 1
         location: arrive1
         orientTowards: arrive0
         ActionSegs:
@@ -26479,7 +26477,7 @@ MonoBehaviour:
           screenxy: 4
           directive: 2
         - actionVarName: Look1
-          targetVarName: 
+          targetVarName: agent1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.73
@@ -26495,7 +26493,7 @@ MonoBehaviour:
       directive: 4
     FinalActionSeg:
       actionVarName: Look1
-      targetVarName: 
+      targetVarName: agent1
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.73
@@ -26534,7 +26532,7 @@ MonoBehaviour:
         height: 0
       TargetDetails:
         orient: 0
-        actionSegOfFocus: 0
+        actionSegOfFocus: 1
         location: arrive1
         orientTowards: arrive0
         ActionSegs:
@@ -26546,7 +26544,7 @@ MonoBehaviour:
           screenxy: 4
           directive: 2
         - actionVarName: Look1
-          targetVarName: 
+          targetVarName: agent1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.73
@@ -30592,26 +30590,26 @@ MonoBehaviour:
   heightMax: 2
   cutoffTime: 100000
   PlanSteps:
-  - (initial)-12859
-  - (DummyInit)-13315
-  - (DummyInit)-13605
-  - ( Long h45 High )-13608[L3][Pan][OrangeBoid]
-  - (Stroll OrangeBoid L3 L2)-13607
-  - (DummyGoal)-13606
-  - ( ExtremeLong h0 High )-13321[L0-L1_2][GroupAim][OrangeBoid L2]
-  - ( Waist h315 Eye )-13322[L1][Pan][BlueBoid]
-  - ( Waist h85 Eye )-13323[L2][Pan][OrangeBoid]
-  - (Look OrangeBoid L2 L1)-13320
-  - (Stroll BlueBoid L0 L1)-13317
-  - (Look BlueBoid L1 L2)-13318
-  - (DummyGoal)-13316
-  - (DummyInit)-12882
-  - ( Waist h195 Eye )-12886[L1][GroupAim][BlueBoid OrangeBoid]
-  - ( Waist h165 Eye )-12887[L2][GroupAim][OrangeBoid BlueBoid]
-  - (Look BlueBoid L1 L2)-12884
-  - (Look OrangeBoid L2 L1)-12885
-  - (DummyGoal)-12883
-  - (goal)-12860
+  - (initial)-9435
+  - (DummyInit)-9891
+  - (DummyInit)-10181
+  - ( Long h45 High )-10184[L3][Pan][OrangeBoid]
+  - (Stroll OrangeBoid L3 L2)-10183
+  - (DummyGoal)-10182
+  - ( ExtremeLong h0 High )-9897[L1-L2_2][GroupAim][OrangeBoid L2]
+  - ( Waist h315 Eye )-9898[L1][Pan][BlueBoid]
+  - ( Waist h85 Eye )-9899[L2][Pan][OrangeBoid]
+  - (Look OrangeBoid L2 L1)-9896
+  - (Stroll BlueBoid L0 L1)-9893
+  - (Look BlueBoid L1 L2)-9894
+  - (DummyGoal)-9892
+  - (DummyInit)-9458
+  - ( Waist h195 Eye )-9462[L1][GroupAim][BlueBoid OrangeBoid]
+  - ( Waist h165 Eye )-9463[L2][GroupAim][OrangeBoid BlueBoid]
+  - (Look BlueBoid L1 L2)-9460
+  - (Look OrangeBoid L2 L1)-9461
+  - (DummyGoal)-9459
+  - (goal)-9436
 --- !u!114 &1110181542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30775,9 +30773,9 @@ MonoBehaviour:
   - 1
   - 2
   FabulaStepNames:
-  - (Race 0 1 2)-906
+  - (Stroll 0 1 2)-2732
   DiscourseStepNames:
-  - ( Full h0 High )-907
+  - ( Long h45 High )-2733[][Pan][]
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -41095,7 +41093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UGAF: {fileID: 1532448783}
   UPC: {fileID: 1609610434}
-  problemname: duel8Test
+  problemname: duel9Test
   cacheIt: 0
   decacheIt: 0
   justCacheMapsAndEffort: 0
