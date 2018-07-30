@@ -31,6 +31,12 @@ sysinfo.txt
 /*.svd
 /*.info
 
+
+/Assets/Scenes/cameras.unity
+/Assets/Scenes/cameras2.unity
+/Assets/Scenes/bridges.unity
+/Assets/Scenes/orientTest.unity
+
  
 # ============ #
 # OS generated #
