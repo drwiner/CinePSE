@@ -182,7 +182,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -230,7 +229,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -246,7 +244,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -833,7 +830,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.38
+      value: -6.94
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.y
@@ -841,7 +838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.08
+      value: -4.17
       objectReference: {fileID: 0}
     - target: {fileID: 4468228345090734, guid: 010fa9e5b9fb960439a648a968232f29, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5715,7 +5712,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -5744,7 +5740,6 @@ MonoBehaviour:
       vangle: 3
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -5766,7 +5761,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -5797,7 +5791,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -5826,7 +5819,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -5848,7 +5840,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -5894,7 +5885,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -5924,7 +5914,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -6100,10 +6089,16 @@ MonoBehaviour:
   FabulaTimelineHost: {fileID: 2052764173}
   DiscourseTimelineHost: {fileID: 33730056}
   fabulaStepNames:
-  - (Stroll BlueBoid L0 L1)-8662
+  - (Race BlueBoid L1 L0)-38950
+  - (Race OrangeBoid L3 L1)-38951
+  - (PickUp BlueBoid BlockA L1 L1A)-38948
+  - (Look BlueBoid L1 L3)-38949
   discourseStepNames:
-  - ( Waist h0 Eye )-8663
-  - ( Waist h180 Eye )-8664
+  - ( Full h275 Eye )-38952[L1][Pan][BlueBoid]
+  - ( Waist h275 Eye )-38955[L3][Pan][OrangeBoid]
+  - ( Waist h275 Eye )-38953[L1][Pan][OrangeBoid]
+  - ( CloseUp h0 Eye )-38956[L1-L3_2][Follow][OrangeBoid]
+  - ( CloseUp h315 Eye )-38954[L0-L1_2][Pan][BlueBoid]
   decachePlan: 0
   reInitialize: 0
   assembleClips: 0
@@ -8557,7 +8552,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -8579,7 +8573,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -8603,7 +8596,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -8625,7 +8617,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -8664,7 +8655,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -8687,7 +8677,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -11196,7 +11185,7 @@ MonoBehaviour:
   - first: 2
     second: 3
   UnityInstructions:
-  - orient 0 2 3
+  - orient 0 3
   - play 1
   - transform 1 3 0.58 2 1.7
   - attach 0 1
@@ -12722,9 +12711,9 @@ MonoBehaviour:
   - 1
   - 2
   FabulaStepNames:
-  - (Race 0 1 2)-2808
+  - (Race 0 1 2)-1995
   DiscourseStepNames:
-  - ( Waist h85 Eye )-2809[][Pan][]
+  - ( Waist h85 Eye )-1996
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -12739,7 +12728,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -12763,7 +12751,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -12802,7 +12789,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -12825,7 +12811,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -13727,7 +13712,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -13749,7 +13733,6 @@ MonoBehaviour:
       vangle: 3
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -13773,7 +13756,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -13795,7 +13777,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -13834,7 +13815,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -13857,7 +13837,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -21846,11 +21825,11 @@ MonoBehaviour:
   - arrive0
   - arrive1
   FabulaStepNames:
-  - (Look agent0 arrive0 arrive1)-3642
-  - (Look agent1 arrive1 arrive0)-3643
+  - (Look agent0 arrive0 arrive1)-2436
+  - (Look agent1 arrive1 arrive0)-2437
   DiscourseStepNames:
-  - ( Waist h195 Eye )-3644[][GroupAim][agent0 agent1]
-  - ( Waist h165 Eye )-3645[][GroupAim][agent1 agent0]
+  - ( Waist h195 Eye )-2438[][GroupAim][agent0 agent1]
+  - ( Waist h165 Eye )-2439[][GroupAim][agent1 agent0]
   NonEqualities:
   - first: 0
     second: 1
@@ -21869,7 +21848,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -21891,7 +21869,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -21915,7 +21892,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -21937,7 +21913,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -21976,7 +21951,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -21999,7 +21973,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -22454,7 +22427,7 @@ MonoBehaviour:
   - first: 2
     second: 3
   UnityInstructions:
-  - orient 0 2 3
+  - orient 0 3
   - transform 1 2 1.7 3 .58
   - play 1
   - dettach 1
@@ -23591,7 +23564,6 @@ MonoBehaviour:
       vangle: 2
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -23639,7 +23611,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -23655,7 +23626,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -24243,9 +24213,9 @@ MonoBehaviour:
   - origin
   - destination
   FabulaStepNames:
-  - (Look agent origin destination)-3236
+  - (Look agent origin destination)-2930
   DiscourseStepNames:
-  - ( Waist h165 Eye )-3237[][Pan][]
+  - ( Waist h165 Eye )-2931[][Pan][]
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -24260,7 +24230,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -24284,7 +24253,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -24323,7 +24291,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -24346,7 +24313,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -25878,7 +25844,6 @@ MonoBehaviour:
       vangle: 2
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -25919,7 +25884,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -25935,7 +25899,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -26127,14 +26090,14 @@ MonoBehaviour:
   - orig0
   - orig1
   FabulaStepNames:
-  - (Stroll agent0 orig0 arrive0)-4322
-  - (Look agent0 arrive0 arrive1)-4323
-  - (Stroll agent1 orig1 arrive1)-4324
-  - (Look agent1 arrive1 arrive0)-4325
+  - (Stroll agent0 orig0 arrive0)-281
+  - (Look agent0 arrive0 arrive1)-282
+  - (Stroll agent1 orig1 arrive1)-283
+  - (Look agent1 arrive1 arrive0)-284
   DiscourseStepNames:
-  - ( ExtremeLong h0 High )-4326[arrive0][GroupAim][agent1 arrive1]
-  - ( Waist h315 Eye )-4327[arrive0][Pan][]
-  - ( Waist h85 Eye )-4328[arrive1][Pan][agent1]
+  - ( ExtremeLong h0 High )-285[arrive0][GroupAim][agent1 arrive1]
+  - ( Waist h315 Eye )-286[arrive0][Pan][]
+  - ( Waist h85 Eye )-287[arrive1][Pan][agent1]
   NonEqualities:
   - first: 0
     second: 1
@@ -26150,8 +26113,7 @@ MonoBehaviour:
     second: 5
   - first: 2
     second: 5
-  ignoreDidNotStart:
-  - Arrive2
+  ignoreDidNotStart: []
   ignoreDidNotEnd: []
   CameraHost: {fileID: 1797034392}
   LocationHost: {fileID: 28017817}
@@ -26164,7 +26126,6 @@ MonoBehaviour:
       vangle: 3
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -26172,7 +26133,7 @@ MonoBehaviour:
       orientTowards: arrive1
       ActionSegs:
       - actionVarName: Arrive
-        targetVarName: agent0 arrive1
+        targetVarName: agent1 arrive1
         actiontypeID: 0
         startPercent: 0
         endPercent: 0.79
@@ -26186,7 +26147,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 1
@@ -26215,7 +26175,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 1
@@ -26246,7 +26205,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -26254,7 +26212,7 @@ MonoBehaviour:
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Arrive
-          targetVarName: agent0 arrive1
+          targetVarName: agent1 arrive1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.79
@@ -26268,7 +26226,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 1
@@ -26297,7 +26254,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 1
@@ -26320,7 +26276,7 @@ MonoBehaviour:
           directive: 2
     InitialActionSeg:
       actionVarName: Arrive
-      targetVarName: agent0 arrive1
+      targetVarName: agent1 arrive1
       actiontypeID: 0
       startPercent: 0
       endPercent: 0.79
@@ -26343,7 +26299,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -26351,7 +26306,7 @@ MonoBehaviour:
         orientTowards: arrive1
         ActionSegs:
         - actionVarName: Arrive
-          targetVarName: agent0 arrive1
+          targetVarName: agent1 arrive1
           actiontypeID: 0
           startPercent: 0
           endPercent: 0.79
@@ -26366,7 +26321,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 1
@@ -26716,7 +26670,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -26764,7 +26717,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -26780,7 +26732,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -27142,7 +27093,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -27183,7 +27133,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -27199,7 +27148,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -28177,7 +28125,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -28218,7 +28165,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -28234,7 +28180,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -30403,37 +30348,22 @@ MonoBehaviour:
   getPlan: 0
   decachePlan: 0
   justCacheMapsAndEffort: 0
-  heightMax: 1
+  heightMax: 2
   cutoffTime: 100000
   PlanSteps:
-  - (initial)-10340
-  - (DummyInit)-10853
-  - (DummyInit)-11050
-  - ( Full h0 High )-11053[L0][Pan][BlueBoid]
-  - (Race BlueBoid L0 L1)-11052
-  - (DummyGoal)-11051
-  - ( Waist h85 Eye )-10856[L1][Pan][BlueBoid]
-  - (DummyGoal)-10854
-  - (DummyInit)-10466
-  - (DummyInit)-10490
-  - ( Full h275 Eye )-10496[L1][Pan][BlueBoid]
-  - ( Waist h275 Eye )-10499[L3][Pan][OrangeBoid]
-  - ( Full h275 Eye )-10497[L1][Pan][BlueBoid]
-  - ( Waist h0 Eye )-10500[L1-L3_2][Follow][OrangeBoid]
-  - ( CloseUp h315 Eye )-10498[L1-L2_2][Pan][BlueBoid]
-  - (PickUp BlueBoid BlockA L1 L1A)-10492
-  - (Look BlueBoid L1 L3)-10493
-  - (Race BlueBoid L1 L2)-10494
-  - (Race OrangeBoid L3 L1)-10495
-  - (DummyGoal)-10491
-  - ( Waist h85 Eye )-10469[L2][Pan][BlueBoid]
-  - (DummyGoal)-10467
-  - (DummyInit)-10352
-  - ( Waist h275 Eye )-10355[L2][Stationary][BlueBoid]
-  - ( Full h315 High )-10356[L2][None][BlueBoid]
-  - (PutDown BlueBoid BlockA L2 L2A)-10354
-  - (DummyGoal)-10353
-  - (goal)-10341
+  - (initial)-8449
+  - (DummyInit)-8482
+  - ( Full h275 Eye )-8488[L1][Pan][BlueBoid]
+  - ( Waist h275 Eye )-8491[L3][Pan][OrangeBoid]
+  - ( Waist h275 Eye )-8489[L1][Pan][BlueBoid]
+  - ( CloseUp h0 Eye )-8492[L1-L3_2][Follow][OrangeBoid]
+  - ( CloseUp h315 Eye )-8490[L0-L1_2][Pan][BlueBoid]
+  - (PickUp BlueBoid BlockA L1 L1A)-8484
+  - (Look BlueBoid L1 L3)-8485
+  - (Race BlueBoid L1 L0)-8486
+  - (Race OrangeBoid L3 L1)-8487
+  - (DummyGoal)-8483
+  - (goal)-8450
 --- !u!114 &1110181542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30597,9 +30527,9 @@ MonoBehaviour:
   - 1
   - 2
   FabulaStepNames:
-  - (Stroll 0 1 2)-37197
+  - (Stroll 0 1 2)-2732
   DiscourseStepNames:
-  - ( Long h45 High )-37198[][Pan][]
+  - ( Long h45 High )-2733[][Pan][]
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -30614,7 +30544,6 @@ MonoBehaviour:
       vangle: 3
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -30638,7 +30567,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -30677,7 +30605,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -30700,7 +30627,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -33371,7 +33297,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -33412,7 +33337,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -33428,7 +33352,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -34975,7 +34898,6 @@ MonoBehaviour:
       vangle: 0
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -35016,7 +34938,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -35032,7 +34953,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -37781,7 +37701,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -37822,7 +37741,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -37838,7 +37756,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -39617,9 +39534,9 @@ MonoBehaviour:
   - 1
   - 2
   FabulaStepNames:
-  - (Stroll 0 1 2)-3022
+  - (Race 0 1 2)-1995
   DiscourseStepNames:
-  - ( Waist h195 Eye )-3023[][Pan][]
+  - ( Waist h85 Eye )-1996
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -39634,7 +39551,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -39658,7 +39574,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -39697,7 +39612,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -39720,7 +39634,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -40760,8 +40673,8 @@ MonoBehaviour:
   compilePrimitiveSteps: 0
   PrimitiveSteps: 64
   DecompositionSchemata:
-  - {fileID: 971130069}
-  - {fileID: 799360122}
+  - {fileID: 1652513192}
+  - {fileID: 423817667}
   - {fileID: 448772385}
   - {fileID: 1814791997}
 --- !u!4 &1532448784
@@ -40790,7 +40703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UGAF: {fileID: 1532448783}
   UPC: {fileID: 1609610434}
-  problemname: raceblocktest21_
+  problemname: raceblocktest11_
   cacheIt: 0
   decacheIt: 0
   justCacheMapsAndEffort: 0
@@ -42474,7 +42387,7 @@ MonoBehaviour:
   - first: 1
     second: 2
   UnityInstructions:
-  - orient 0 1 2
+  - orient 0 2
   opString: (Look 0 1 2)
   reset: 0
 --- !u!114 &1592729613
@@ -43124,19 +43037,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitialState:
   - at OrangeBoid L3
-  - at BlueBoid L0
+  - at BlueBoid L1
   - at BlockA L1A
   - placeable L1A L1
   - placeable L0A L0
   - placeable L2A L2
   - placeable L3A L3
-  - occupied L0
+  - occupied L1
   - occupied L3
   - occupied L1A
   - freehands OrangeBoid
   - freehands BlueBoid
   GoalState:
-  - at BlockA L0A
   - chasedby BlueBoid OrangeBoid
   DiscourseToo: 0
   reset: 0
@@ -44311,9 +44223,9 @@ MonoBehaviour:
   - 1
   - 2
   FabulaStepNames:
-  - (Race 0 1 2)-2594
+  - (Race 0 1 2)-906
   DiscourseStepNames:
-  - ( Full h0 High )-2595[][Pan][]
+  - ( Full h0 High )-907
   NonEqualities: []
   ignoreDidNotStart: []
   ignoreDidNotEnd: []
@@ -44328,7 +44240,6 @@ MonoBehaviour:
       vangle: 3
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -44352,7 +44263,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -44391,7 +44301,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -44414,7 +44323,6 @@ MonoBehaviour:
         vangle: 3
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -47151,7 +47059,6 @@ MonoBehaviour:
       vangle: 0
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -47192,7 +47099,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -47208,7 +47114,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -47719,7 +47624,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -47760,7 +47664,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -47776,7 +47679,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -48903,7 +48805,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -48951,7 +48852,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -48967,7 +48867,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49315,16 +49214,16 @@ MonoBehaviour:
   - blockloc
   - fleeloc
   FabulaStepNames:
-  - (PickUp agent0 block0 pos0 blockloc)-244
-  - (Look agent0 pos0 pos1)-245
-  - (Race agent0 pos0 fleeloc)-246
-  - (Race agent1 pos1 pos0)-247
+  - (PickUp agent0 block0 pos0 blockloc)-591
+  - (Look agent0 pos0 pos1)-592
+  - (Race agent0 pos0 fleeloc)-593
+  - (Race agent1 pos1 pos0)-594
   DiscourseStepNames:
-  - ( Full h275 Eye )-248[][Pan][]
-  - ( Full h275 Eye )-249[][Pan][]
-  - ( CloseUp h315 Eye )-250[][Pan][]
-  - ( Waist h275 Eye )-251[][Pan][]
-  - ( Waist h0 Eye )-252[][Follow][]
+  - ( Full h275 Eye )-595[][Pan][]
+  - ( Full h275 Eye )-596[][Pan][]
+  - ( CloseUp h315 Eye )-597[][Pan][]
+  - ( Waist h275 Eye )-598[][Pan][]
+  - ( Waist h0 Eye )-599[][Follow][]
   NonEqualities:
   - first: 0
     second: 1
@@ -49339,9 +49238,7 @@ MonoBehaviour:
   - first: 4
     second: 6
   ignoreDidNotStart: []
-  ignoreDidNotEnd:
-  - Flee
-  - Chase
+  ignoreDidNotEnd: []
   CameraHost: {fileID: 1797034392}
   LocationHost: {fileID: 28017817}
   DSubSteps:
@@ -49353,7 +49250,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -49375,7 +49271,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -49404,7 +49299,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -49415,7 +49309,7 @@ MonoBehaviour:
         targetVarName: 
         actiontypeID: 0
         startPercent: 0
-        endPercent: 0.61
+        endPercent: 0.84
         screenxy: 0
         directive: 2
   - CamDetails:
@@ -49426,7 +49320,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -49448,7 +49341,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -49472,7 +49364,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49494,7 +49385,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49523,7 +49413,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49534,7 +49423,7 @@ MonoBehaviour:
           targetVarName: 
           actiontypeID: 0
           startPercent: 0
-          endPercent: 0.61
+          endPercent: 0.84
           screenxy: 0
           directive: 2
     - CamDetails:
@@ -49545,7 +49434,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49567,7 +49455,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49606,7 +49493,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49629,7 +49515,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -49643,13 +49528,13 @@ MonoBehaviour:
           endPercent: 0.77
           screenxy: 4
           directive: 3
-  NumGroundDecomps: 0
+  NumGroundDecomps: 14
   readClips: 0
   setCamsAndLocs: 0
   assembleDecomp: 0
   filterCndts: 0
   reset: 0
-  testOne: 1
+  testOne: 12
   visualizeTest: 0
 --- !u!320 &1814791998
 PlayableDirector:
@@ -49856,298 +49741,6 @@ MonoBehaviour:
   searchHierarchy: 1
   active: 1
   postPlayback: 2
---- !u!1 &1840635060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1840635061}
-  - component: {fileID: 1840635063}
-  - component: {fileID: 1840635062}
-  m_Layer: 0
-  m_Name: MatchOnRace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1840635061
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1840635060}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2016537118}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840635062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1840635060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8ac0cf81d3c62747b2c244874bb9c2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectParameterTypes: []
-  TermNames:
-  - 0
-  - 1
-  - 2
-  FabulaStepNames:
-  - (Race 0 1 2)-2808
-  DiscourseStepNames:
-  - ( Waist h85 Eye )-2809[][Pan][]
-  NonEqualities: []
-  ignoreDidNotStart: []
-  ignoreDidNotEnd: []
-  CameraHost: {fileID: 1797034392}
-  LocationHost: {fileID: 28017817}
-  DSubSteps:
-  - CamDetails:
-      scale: 4
-      targetLocation: 
-      targetOrientation: 0
-      hangle: 8
-      vangle: 1
-      distance: 0
-      height: 0
-    CamObject: 
-    TargetDetails:
-      orient: 0
-      actionSegOfFocus: 0
-      location: 
-      orientTowards: 
-      ActionSegs:
-      - actionVarName: Action1
-        targetVarName: 
-        actiontypeID: 0
-        startPercent: 0
-        endPercent: 0.24
-        screenxy: 4
-        directive: 2
-  - CamDetails:
-      scale: 4
-      targetLocation: 
-      targetOrientation: 0
-      hangle: 6
-      vangle: 1
-      distance: 0
-      height: 0
-    CamObject: 
-    TargetDetails:
-      orient: 0
-      actionSegOfFocus: 0
-      location: 
-      orientTowards: 
-      ActionSegs:
-      - actionVarName: Action1
-        targetVarName: 
-        actiontypeID: 0
-        startPercent: 0.76
-        endPercent: 1
-        screenxy: 4
-        directive: 2
-  PartialDecomp:
-    discourseSubSteps:
-    - CamDetails:
-        scale: 4
-        targetLocation: 
-        targetOrientation: 0
-        hangle: 8
-        vangle: 1
-        distance: 0
-        height: 0
-      CamObject: 
-      TargetDetails:
-        orient: 0
-        actionSegOfFocus: 0
-        location: 
-        orientTowards: 
-        ActionSegs:
-        - actionVarName: Action1
-          targetVarName: 
-          actiontypeID: 0
-          startPercent: 0
-          endPercent: 0.24
-          screenxy: 4
-          directive: 2
-    - CamDetails:
-        scale: 4
-        targetLocation: 
-        targetOrientation: 0
-        hangle: 6
-        vangle: 1
-        distance: 0
-        height: 0
-      CamObject: 
-      TargetDetails:
-        orient: 0
-        actionSegOfFocus: 0
-        location: 
-        orientTowards: 
-        ActionSegs:
-        - actionVarName: Action1
-          targetVarName: 
-          actiontypeID: 0
-          startPercent: 0.76
-          endPercent: 1
-          screenxy: 4
-          directive: 2
-    InitialActionSeg:
-      actionVarName: Action1
-      targetVarName: 
-      actiontypeID: 0
-      startPercent: 0
-      endPercent: 0.24
-      screenxy: 4
-      directive: 2
-    FinalActionSeg:
-      actionVarName: Action1
-      targetVarName: 
-      actiontypeID: 0
-      startPercent: 0.76
-      endPercent: 1
-      screenxy: 4
-      directive: 2
-    InitialCamAction:
-      CamDetails:
-        scale: 4
-        targetLocation: 
-        targetOrientation: 0
-        hangle: 8
-        vangle: 1
-        distance: 0
-        height: 0
-      CamObject: 
-      TargetDetails:
-        orient: 0
-        actionSegOfFocus: 0
-        location: 
-        orientTowards: 
-        ActionSegs:
-        - actionVarName: Action1
-          targetVarName: 
-          actiontypeID: 0
-          startPercent: 0
-          endPercent: 0.24
-          screenxy: 4
-          directive: 2
-    FinalCamAction:
-      CamDetails:
-        scale: 4
-        targetLocation: 
-        targetOrientation: 0
-        hangle: 6
-        vangle: 1
-        distance: 0
-        height: 0
-      CamObject: 
-      TargetDetails:
-        orient: 0
-        actionSegOfFocus: 0
-        location: 
-        orientTowards: 
-        ActionSegs:
-        - actionVarName: Action1
-          targetVarName: 
-          actiontypeID: 0
-          startPercent: 0.76
-          endPercent: 1
-          screenxy: 4
-          directive: 2
-  NumGroundDecomps: 0
-  readClips: 0
-  setCamsAndLocs: 0
-  assembleDecomp: 0
-  filterCndts: 0
-  reset: 0
-  testOne: 0
-  visualizeTest: 0
---- !u!320 &1840635063
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1840635060}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 8bf2fb1d466673944b9c812521ca7069, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  - key: {fileID: 114154400457108186, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114032970630252842, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114326600431696128, guid: e7d87c81645504b469950d9479a3ca3f, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 0}
-    value: {fileID: 1840635060}
-  - key: {fileID: 114090317238295782, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114105736619287422, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114516810137917964, guid: 7d3617981c9958e44b2dd143d42ee3c1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 0}
-    value: {fileID: 1840635060}
-  - key: {fileID: 114282253506029066, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114275925401761772, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114258582537737994, guid: 51013130e687a2d4886337f93fcf36b8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 0}
-    value: {fileID: 1840635060}
-  - key: {fileID: 114520960298040954, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114944695894505090, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114879984951233900, guid: b8e4b051bc06f2840a56c76a5375d0a0, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114520960298040954, guid: eccc0b78dd367674f89e66e741fe90c8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114944695894505090, guid: eccc0b78dd367674f89e66e741fe90c8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114879984951233900, guid: eccc0b78dd367674f89e66e741fe90c8, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114520960298040954, guid: b216e851f1b812c41b4200125c6beb97, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114944695894505090, guid: b216e851f1b812c41b4200125c6beb97, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114879984951233900, guid: b216e851f1b812c41b4200125c6beb97, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114520960298040954, guid: 8bf2fb1d466673944b9c812521ca7069, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114944695894505090, guid: 8bf2fb1d466673944b9c812521ca7069, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114879984951233900, guid: 8bf2fb1d466673944b9c812521ca7069, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References:
-    - 2e6a46419907b264dbb54b178c17f183: {fileID: 805926700}
-    - ee943220213048c44be26585ebdbf680: {fileID: 331032067}
-    - 0e2af4cc22efd88418167f7907177a3e: {fileID: 1502558324}
-    - 6e2a9f8647236b94faa319fee3c20c3b: {fileID: 331032067}
-    - a854d00ef52b0984f950cbbab47355ea: {fileID: 1502558324}
-    - 0c9813e11b962fa49bc4b2a02359476d: {fileID: 0}
 --- !u!114 &1840790712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53554,7 +53147,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 1
@@ -53583,7 +53175,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -53619,7 +53210,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -53643,7 +53233,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 1
@@ -53672,7 +53261,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -53708,7 +53296,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -53747,7 +53334,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 1
@@ -53777,7 +53363,6 @@ MonoBehaviour:
         vangle: 1
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -54545,7 +54130,6 @@ MonoBehaviour:
       vangle: -30
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: -1
       actionSegOfFocus: 0
@@ -54593,7 +54177,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -54609,7 +54192,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -55953,11 +55535,6 @@ Prefab:
       propertyPath: MutablePreconditions.Array.data[4]
       value: aux 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114537246454900184, guid: 918e88959ad8ea1469b991d0db5bddda,
-        type: 2}
-      propertyPath: UnityInstructions.Array.data[0]
-      value: orient 0 2 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 918e88959ad8ea1469b991d0db5bddda, type: 2}
   m_IsPrefabParent: 0
@@ -56569,7 +56146,6 @@ Transform:
   - {fileID: 886131061}
   - {fileID: 799360121}
   - {fileID: 238069762}
-  - {fileID: 1840635061}
   m_Father: {fileID: 63597726}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58966,7 +58542,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -58982,7 +58557,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -59340,7 +58914,6 @@ MonoBehaviour:
       vangle: 2
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -59388,7 +58961,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -59404,7 +58976,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -59547,7 +59118,6 @@ MonoBehaviour:
       vangle: 1
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: 0
       actionSegOfFocus: 0
@@ -59595,7 +59165,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -59611,7 +59180,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -59960,7 +59528,6 @@ MonoBehaviour:
       vangle: -30
       distance: 0
       height: 0
-    CamObject: 
     TargetDetails:
       orient: -1
       actionSegOfFocus: 0
@@ -60008,7 +59575,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0
@@ -60024,7 +59590,6 @@ MonoBehaviour:
         vangle: 0
         distance: 0
         height: 0
-      CamObject: 
       TargetDetails:
         orient: 0
         actionSegOfFocus: 0

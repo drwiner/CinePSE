@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: InitiatingRace
+  m_Name: MatchPutDown
   m_EditorClassIdentifier: 
   m_NextId: 0
   m_Tracks:
@@ -38,6 +38,24 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips: []
+--- !u!114 &114089676375067000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b75fbfaa2b710428733393da6691ed, type: 3}
+  m_Name: FabulaAsset
+  m_EditorClassIdentifier: 
+  Schema:
+    exposedName: ef414f72837f9ed49a8697c9a66b5466
+    defaultValue: {fileID: 0}
+  Constraints: []
+  agentOrient: 0
+  location: 
+  schema: {fileID: 0}
 --- !u!114 &114154400457108186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,8 +76,8 @@ MonoBehaviour:
   m_Clips:
   - m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 114589755396913048}
-    m_UnderlyingAsset: {fileID: 114589755396913048}
+    m_Asset: {fileID: 114089676375067000}
+    m_UnderlyingAsset: {fileID: 114089676375067000}
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114154400457108186}
@@ -112,7 +130,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Action
+    m_DisplayName: PuttingDown
     m_Version: 1
 --- !u!114 &114326600431696128
 MonoBehaviour:
@@ -134,9 +152,9 @@ MonoBehaviour:
   m_Clips:
   - m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 114765228892129696}
-    m_UnderlyingAsset: {fileID: 114765228892129696}
-    m_Duration: 1.1333333333333333
+    m_Asset: {fileID: 114517470866085006}
+    m_UnderlyingAsset: {fileID: 114517470866085006}
+    m_Duration: 2.5166666666666666
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114326600431696128}
     m_EaseInDuration: 0
@@ -188,27 +206,67 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Shot
+    m_DisplayName: Start90Putdown
     m_Version: 1
---- !u!114 &114589755396913048
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b75fbfaa2b710428733393da6691ed, type: 3}
-  m_Name: FabulaAsset
-  m_EditorClassIdentifier: 
-  Schema:
-    exposedName: 006ca63ff6b415746abca852b3c07e9a
-    defaultValue: {fileID: 0}
-  Constraints: []
-  agentOrient: 0
-  location: 
-  schema: {fileID: 0}
---- !u!114 &114765228892129696
+  - m_Start: 2.5166666666666666
+    m_ClipIn: 0
+    m_Asset: {fileID: 114616069065876140}
+    m_UnderlyingAsset: {fileID: 114517470866085006}
+    m_Duration: 2.4833333333333334
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114326600431696128}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: EndAngleTowardsPutdown
+    m_Version: 1
+--- !u!114 &114517470866085006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -223,7 +281,40 @@ MonoBehaviour:
     scale: 4
     targetLocation: 
     targetOrientation: 0
-    hangle: 1
+    hangle: 7
+    vangle: 1
+    distance: 0
+    height: 0
+  targetSchema:
+    orient: 0
+    actionSegOfFocus: 0
+    location: 
+    orientTowards: 
+    ActionSegs:
+    - actionVarName: PuttingDown
+      targetVarName: 
+      actiontypeID: 0
+      startPercent: 0
+      endPercent: 0.5
+      screenxy: 2
+      directive: 1
+  Constraints: []
+--- !u!114 &114616069065876140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d87848e7f410f4795282cc0da46ada, type: 3}
+  m_Name: DiscourseAsset
+  m_EditorClassIdentifier: 
+  camSchema:
+    scale: 4
+    targetLocation: 
+    targetOrientation: 0
+    hangle: 8
     vangle: 3
     distance: 0
     height: 0
@@ -233,11 +324,11 @@ MonoBehaviour:
     location: 
     orientTowards: 
     ActionSegs:
-    - actionVarName: Action
+    - actionVarName: PuttingDown
       targetVarName: 
       actiontypeID: 0
-      startPercent: 0
-      endPercent: 0.23
-      screenxy: 4
-      directive: 2
+      startPercent: 0.5
+      endPercent: 1
+      screenxy: 0
+      directive: 0
   Constraints: []
