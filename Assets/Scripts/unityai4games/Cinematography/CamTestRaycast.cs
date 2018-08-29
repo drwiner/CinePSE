@@ -9,6 +9,7 @@ public class CamTestRaycast : MonoBehaviour {
     public GameObject Target;
 
     public bool RunTest = false;
+    public float amountToSubtractFromCamDist = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -29,13 +30,15 @@ public class CamTestRaycast : MonoBehaviour {
     {
 
         var targetPosition = target.transform.position;
-        var camDist = Vector3.Distance(camPosition, targetPosition);
+        var camDist = Vector3.Distance(camPosition, targetPosition) - amountToSubtractFromCamDist;
         var vectorDirection = (targetPosition - camPosition);
-        
+
+
+        Debug.DrawRay(camPosition, vectorDirection.normalized * (camDist), Color.cyan);
         // First, just check if we can hit the target at all.
         if (Physics.Raycast(camPosition, vectorDirection, camDist))
         {
-            Debug.DrawRay(camPosition, vectorDirection.normalized * (camDist ), Color.cyan);
+            //Debug.DrawRay(camPosition, vectorDirection.normalized * (camDist ), Color.cyan);
             var newGo = new GameObject();
             newGo.transform.position = camPosition + (targetPosition - camPosition);
             return false;
@@ -53,7 +56,7 @@ public class CamTestRaycast : MonoBehaviour {
             {
                 Debug.DrawRay(camPosition, vectorBetweenPointAndPosition.normalized * (Vector3.Distance(camPosition, vertexArray[i])), Color.yellow);
                 unseen++;
-                if (unseen >= 6)
+                if (unseen > 6)
                 {
                     return false;
                 }

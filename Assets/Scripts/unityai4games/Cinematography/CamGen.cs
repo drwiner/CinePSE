@@ -46,6 +46,7 @@ namespace CameraNamespace {
         public CustomCamGen TestCam;
         public bool createTestCam = false;
 
+
         public string cacheFileName;
 
         public bool assembleCameras = false;
@@ -56,6 +57,7 @@ namespace CameraNamespace {
 
         public bool cacheCams = false;
         public bool decacheCams = false;
+
 
         private List<CamSchema> cameraList;
 
@@ -305,6 +307,8 @@ namespace CameraNamespace {
             cc.m_DeadZoneHeight = 0.25f;
             cc.m_SoftZoneWidth = 1.5f;
             cc.m_SoftZoneHeight = 1.5f;
+            cc.m_LookaheadTime = 0f;
+            cc.m_LookaheadSmoothing = 3f;
 
             FramingParameters framing_data;
             try
@@ -412,8 +416,8 @@ namespace CameraNamespace {
 
             // Calculate Camera Position
             camHost.transform.position = loc.transform.position + camTransformDirection * camDist;
-            camHost.transform.position = new Vector3(camHost.transform.position.x, 0.5f, camHost.transform.position.z);
-            var height = CinematographyAttributes.SolveForY(loc.transform.position, camHost.transform.position, 0.5f, camattributes.VangleInt);
+            camHost.transform.position = new Vector3(camHost.transform.position.x, target.transform.position.y, camHost.transform.position.z);
+            var height = CinematographyAttributes.SolveForY(loc.transform.position, camHost.transform.position, target.transform.position.y, camattributes.VangleInt);
             camHost.transform.position = new Vector3(camHost.transform.position.x, height, camHost.transform.position.z);
 
             // Gives starting orientation of camera. At planning time, a "lookAt" parameter is set to specific target.
@@ -474,14 +478,13 @@ namespace CameraNamespace {
             var targetPosition = target.transform.position;
             var camDist = Vector3.Distance(camPosition, targetPosition);
             var vectorDirection = (targetPosition - camPosition);
-
             // First, just check if we can hit the target at all.
-            if (Physics.Raycast(camPosition, vectorDirection, camDist))
+            if (Physics.Raycast(camPosition, vectorDirection, camDist-2))
             {
                 target.SetActive(false);
                 return false;
             }
-
+            Debug.Log("basic points observed");
             // Next, check if we can hit every vertex on bounding box collider
             var vertexArray = GetColliderVertexPositions(target);
             int unseen = 0;
@@ -490,8 +493,9 @@ namespace CameraNamespace {
                 var vectorBetweenPointAndPosition = vertexArray[i] - camPosition;
                 if (Physics.Raycast(camPosition, vectorBetweenPointAndPosition, Vector3.Distance(camPosition, vertexArray[i])))
                 {
+                    Debug.DrawRay(camPosition, vectorBetweenPointAndPosition.normalized * (Vector3.Distance(camPosition, vertexArray[i])), Color.yellow);
                     unseen++;
-                    if (unseen >= 6)
+                    if (unseen > 6)
                     {
                         target.SetActive(false);
                         return false;

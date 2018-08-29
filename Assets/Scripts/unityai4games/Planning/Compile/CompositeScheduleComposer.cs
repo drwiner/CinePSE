@@ -18,6 +18,7 @@ namespace CompilationNamespace
         TimelineDecomposition gdecomp;
         List<IPredicate> Preconditions;
         List<IPredicate> Effects;
+        public static bool CreateObsConditions = false;
 
         IPlanStep InitialStep;
         IPlanStep GoalStep;
@@ -173,8 +174,8 @@ namespace CompilationNamespace
                     }
                 }
                 // cast predicate as term?
-                //  var obsTerm = new Predicate("obs", new List<ITerm>() { observedEffect as ITerm}, true);
-                //effects.Add(obsTerm);
+                
+
                 effects.Add(observedEffect);
 
                 GoalStep.Preconditions.Add(observedEffect);
@@ -191,6 +192,16 @@ namespace CompilationNamespace
             foreach(var eff in effects)
             {
                 Effects.Add(eff);
+                if (CreateObsConditions)
+                {
+                    var effSplit = eff.Name.Split('-')[0];
+                    if (effSplit.Equals("bel") || eff.Name.Equals("obs-starts"))
+                    {
+                        continue;
+                    }
+                    var obsTerm = new Predicate("obs", new List<ITerm>() { eff as ITerm }, true);
+                    Effects.Add(obsTerm);
+                }
             }
         }
 
@@ -240,6 +251,16 @@ namespace CompilationNamespace
             foreach(var precon in preconditions)
             {
                 Preconditions.Add(precon);
+                if (CreateObsConditions)
+                {
+                    var preSplit = precon.Name.Split('-')[0];
+                    if (preSplit.Equals("bel") || precon.Name.Equals("obs-starts"))
+                    {
+                        continue;
+                    }
+                    var obsTerm = new Predicate("obs", new List<ITerm>() { precon as ITerm }, true);
+                    Preconditions.Add(obsTerm);
+                }
             }
         }
 

@@ -300,7 +300,7 @@ namespace CompilationNamespace
                     }
                     if (cndtSet.Count == 0)
                     {
-                        Debug.Log(string.Format("Camera Action {0} had no options", discStepClone.ToString()));
+                        Debug.Log(string.Format("Camera Action {0} had no options, location {1}, agent {2}, orient {3}", discStepClone.ToString(), targetLocation, actionSeg.targetVarName, targetOrient));
                     }
                     permList.Add(cndtSet);
                     continue;
@@ -339,7 +339,7 @@ namespace CompilationNamespace
 
                 if (cndtSet.Count == 0)
                 {
-                    Debug.Log(string.Format("Camera Action {0} had no options", discStepClone.ToString()));
+                    Debug.Log(string.Format("Camera Action {0} had no options, location {1}, agent {2}, orient {3}", discStepClone.ToString(), targetLocation, actionSeg.targetVarName, targetOrient));
                 }
 
                 // for each discourse sub-step, cndtSet is the list of candidate and valid camera shots to rewrite.

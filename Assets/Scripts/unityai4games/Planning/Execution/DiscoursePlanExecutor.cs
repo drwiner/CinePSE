@@ -373,7 +373,8 @@ namespace PlanningNamespace
                 var remainderClip = ta.GetRootTrack(0).CreateClip<SteeringAsset>();
 
                 // REPLACING the timeline clip's reference, because now this is the clip that we are cutting to.
-                var newClipInfo = new ClipInfo(timelineclip.director, intoClipStart-.12f, remainingTime + .12f, tc.displayName + "-continued");
+                var newClipInfo = new ClipInfo(timelineclip.director, intoClipStart, remainingTime, tc.displayName + "-continued");
+                //var newClipInfo = new ClipInfo(timelineclip.director, intoClipStart-.06f, remainingTime + .06f, tc.displayName + "-continued");
 
                 // Agent doing steering; may not be camera's target.
                 var boid = GameObject.Find(tc.displayName.Split(' ')[1]);

@@ -31,6 +31,7 @@ namespace PlanningNamespace
         public bool decachePlan = false;
         public bool justCacheMapsAndEffort = false;
         public int heightMax = 1;
+        public int e3starweight = 12;
         public float cutoffTime = 10000;
 
         public List<string> PlanSteps;
@@ -169,8 +170,8 @@ namespace PlanningNamespace
 
             // MW-Loc-Conf
            // var solution = Run(initialPlan, new ADstar(false), new E0(new NumOpenConditionsHeuristic(), true), cutoffTime);
-            var solution = Run(initialPlan, new ADstar(false), new E0(new AddReuseHeuristic(), true), cutoffTime);
-            //var solution = Run(initialPlan, new ADstar(false), new E3(new AddReuseHeuristic()), cutoffTime);
+            //var solution = Run(initialPlan, new ADstar(false), new E0(new AddReuseHeuristic(), true), cutoffTime);
+            var solution = Run(initialPlan, new ADstar(false), new E3Star(new AddReuseHeuristic(), e3starweight), cutoffTime);
             //var solution = Run(initPlan, new BFS(), new Nada(new ZeroHeuristic()), 20000);
             if (solution != null)
             {

@@ -19,6 +19,7 @@ namespace PlanningNamespace
     {
 
         public bool compilePrimitiveSteps = false;
+        public bool includeObsPreconsAndEffects = false;
         //public bool compileCompositeSteps = false;
         //public bool regenerateInitialPlanWithComposite = false;
         //public bool checkEffects = false;
@@ -129,7 +130,8 @@ namespace PlanningNamespace
                 //unitydecomp.Filter();
                 Debug.Log("Read and Assemble for unity decomp: " + unitydecomp.name);
             }
-            
+
+            CompositeScheduleComposer.CreateObsConditions = includeObsPreconsAndEffects;
             // For each height
             for (int h = 0; h < heightMax; h++)
             {
@@ -147,7 +149,8 @@ namespace PlanningNamespace
                             Debug.Log("couldn't create " + comp.ToString());
                             continue;
                         }
-                        comp.Height = h+1;
+                        //comp.Height = h+1;
+                        comp.Height = GetModifiedHeightValue(comp);
                         newopsThisRound.Add(comp as IOperator);
                     }
                 }
@@ -324,6 +327,12 @@ namespace PlanningNamespace
                 return true;
             }
             return false;
+        }
+
+        public static int GetModifiedHeightValue(CompositeSchedule compSched)
+        {
+            var numCamSteps = compSched.NumberCamSteps;
+            return Mathf.Max(numCamSteps, compSched.SubSteps.Count - numCamSteps);
         }
 
         public IPlan PreparePlanner(bool resetCache)

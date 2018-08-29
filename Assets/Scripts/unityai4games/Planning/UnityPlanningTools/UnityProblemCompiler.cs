@@ -5,6 +5,8 @@ using UnityEngine;
 using System.Linq;
 using BoltFreezer.PlanTools;
 using GraphNamespace;
+using System.IO;
+using BoltFreezer.Scheduling;
 
 namespace PlanningNamespace
 {
@@ -20,6 +22,8 @@ namespace PlanningNamespace
         public bool DiscourseToo = false;
         public bool reset;
         public bool setInitialState;
+        public bool writeToFile = false;
+        public string fileName = "";
 
         public void Awake()
         {
@@ -40,6 +44,16 @@ namespace PlanningNamespace
             {
                 SetInitialState();
                 setInitialState = false;
+            }
+
+            if (writeToFile)
+            {
+                writeToFile = false;
+                var p = new Problem("unity_output_problem", "unity_output_problem", "unity", "", new List<IObject>(), initialPredicateList, goalPredicateList);
+                var directory = @"D://documents//frostbow//benchmarks//unityOutput/";
+                Directory.CreateDirectory(directory);
+                var file = directory + fileName;
+                WriteProblemToFile(p, file);
             }
         }
 
@@ -64,6 +78,36 @@ namespace PlanningNamespace
             }
         }
 
+        public void AddObservedNegativeConditions()
+        {
+            foreach (var ga in GroundActionFactory.GroundActions)
+            {
+                foreach (var precon in ga.Preconditions)
+                {
+                    // if the precon is signed positive, ignore
+                    if (precon.Sign)
+                    {
+                        continue;
+                    }
+                    // if initially the precondition reveresed is true, ignore
+                    if (initialPredicateList.Contains(precon.GetReversed()))
+                    {
+                        continue;
+                    }
+
+                    // then this precondition is negative and its positive correlate isn't in the initial state
+                    var obsPred = new Predicate("obs", new List<ITerm>() { precon as ITerm }, true);
+
+                    if (initialPredicateList.Contains(obsPred as IPredicate))
+                    {
+                        continue;
+                    }
+
+                    initialPredicateList.Add(obsPred as IPredicate);
+                }
+            }
+        }
+
         public void ReadProblem()
         {
             initialPredicateList = new List<IPredicate>();
@@ -80,6 +124,7 @@ namespace PlanningNamespace
                     {
                         var obsPred = new Predicate("obs", new List<ITerm>() { pred as ITerm }, true);
                         initialPredicateList.Add(obsPred as IPredicate);
+
                     }
                     Debug.Log(pred.ToString());
                 }
@@ -119,7 +164,7 @@ namespace PlanningNamespace
                     var obsPred2 = new Predicate("obs", new List<ITerm>() { pred2 as ITerm }, true);
                     initialPredicateList.Add(obsPred2 as IPredicate);
                 }
-            }
+            }           
         }
 
         public static Predicate ProcessStringItem(string stringItem)
@@ -143,6 +188,17 @@ namespace PlanningNamespace
             var newPredicate = new Predicate(predName, terms, signage);
             return newPredicate;
         }
+
+        public static void WriteProblemToFile(Problem problem, string directory)
+        {
+            var file = directory + "_" + problem.Name + ".txt";
+
+            using (StreamWriter writer = new StreamWriter(file, false))
+            {
+                writer.Write(problem.ToString());
+            }
+        }
+
     }
 
 }

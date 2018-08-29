@@ -26,7 +26,7 @@ namespace GraphNamespace
         void Start()
         {
             //CalculateEdges();
-            makeEdgesByHand = true;
+            //makeEdgesByHand = true;
         }
 
         public void Update()
@@ -55,10 +55,11 @@ namespace GraphNamespace
             for (int i = 0; i < transform.childCount; i++)
             {
                 var go = transform.GetChild(i).gameObject;
-                if (!go.name.Last().Equals("A"))
-                {
-                    go.name = string.Format("{0}{1}", "L", i.ToString());
-                }
+                //if (!go.name.Last().Equals("A"))
+                //{
+
+                //    go.name = string.Format("{0}{1}", "L", i.ToString());
+                //}
                 TileNode tn = transform.GetChild(i).GetComponent<TileNode>();
                 if (!transform.GetChild(i).gameObject.activeSelf)
                 {

@@ -19,6 +19,13 @@ namespace CompilationNamespace
         public bool cacheIt = false;
         public bool decacheIt = false;
         public bool justCacheMapsAndEffort = false;
+
+        public void CacheIt(string orig_name, string _pname)
+        {
+            problemname = _pname;
+            CacheIt();
+            problemname = orig_name;
+        }
         
         // Use this for initialization
         public void CacheIt()

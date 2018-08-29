@@ -238,7 +238,7 @@ namespace PlanningNamespace {
                         var newCntg = new Tuple<IPlanStep, IPlanStep>(fabClipStepMap[last], planStep);
                         cntgs.Add(newCntg);
                     }
-                    else if(fabClip.start - lastItemEndTime >= 0.12)
+                    else if(fabClip.start - lastItemEndTime > 0.06)
                     {
                         // what's the maximum amount of space that can go into here? This is calculated by looking at specific action.
                         var ordering = new Tuple<IPlanStep, IPlanStep>(fabClipStepMap[last], planStep);
@@ -274,7 +274,7 @@ namespace PlanningNamespace {
                         var newCntg = new Tuple<CamPlanStep, CamPlanStep>(discClipStepMap[dlast], camstep);
                         dcntgs.Add(newCntg);
                     }
-                    else if (discClip.start - lastItemEndTime >= 0.3)
+                    else if (discClip.start - lastItemEndTime >= 0.06)
                     {
                         // what's the maximum amount of space that can go into here? This is calculated by looking at specific action.
                         var ordering = new Tuple<CamPlanStep, CamPlanStep>(discClipStepMap[dlast], camstep);
