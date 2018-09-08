@@ -42,7 +42,7 @@ namespace TimelineClipsNamespace
         {
             while (ft < _pd.time)
             {
-                _pd.time -= .1f;
+                _pd.time -= .01f;
                 _pd.Evaluate();
             }
         }
@@ -51,7 +51,7 @@ namespace TimelineClipsNamespace
         {
             while (ft > _pd.time)
             {
-                _pd.time += .06f;
+                _pd.time += .01f;
                 _pd.Evaluate();
             }
         }

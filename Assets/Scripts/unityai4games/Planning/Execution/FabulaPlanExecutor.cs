@@ -125,7 +125,7 @@ namespace  PlanningNamespace
 
         public static double CalculateSteeringDuration(SteeringParams sp, Vector3 origin, Vector3 destination)
         {
-            return (((Vector3.Distance(destination, origin)) / sp.MAXSPEED) ) + Vector3.Distance(destination, origin) * .016; //.166 buffer to arrive at destination
+            return ((((Vector3.Distance(destination, origin)) / sp.MAXSPEED) ) + Vector3.Distance(destination, origin) * .016) + .06f; //.166 buffer to arrive at destination
         }
 
         public ClipInfo ProcessSteering(GameObject goWithActionName, string instruction, List<GameObject> terms, double startTime)
@@ -154,7 +154,7 @@ namespace  PlanningNamespace
             SteerClip(agent, steerStart, steerFinish, true, true, true, CI);
 
             // Also, add a brief execution to bring steering to finish
-            var followUpCI = new ClipInfo(director, startTime + duration - .2, 0.21f, "steering follow up");
+            var followUpCI = new ClipInfo(director, startTime + duration - .09f, 0.09f, "steering follow up");
             SteerClip(agent, steerFinish, steerFinish, true, false, false, followUpCI);
 
             return CI;
@@ -399,7 +399,7 @@ namespace  PlanningNamespace
         {
             var steerClip = steerTrack.CreateClip<SteeringAsset>();
             steerClip.start = CI.start + 0.06f;
-            steerClip.duration = CI.duration-.12f;
+            steerClip.duration = CI.duration-.06f;
             steerClip.displayName = CI.display;
             SteeringAsset steer_clip = steerClip.asset as SteeringAsset;
             SteerBind(steer_clip, go, startPos, goalPos, depart, arrival, isMaster);

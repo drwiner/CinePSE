@@ -30,7 +30,7 @@ namespace SteeringNamespace
             position = this.transform.position;
             velc = new Vector3(0f, 0f, 0f);
             rotation = 0f;
-            orientation = 0f;
+            orientation = this.transform.eulerAngles.y * Mathf.Deg2Rad;
         }
 
         // Update is called once per frame
@@ -43,7 +43,7 @@ namespace SteeringNamespace
                 position = this.transform.position;
                 velc = new Vector3(0f, 0f, 0f);
                 rotation = 0f;
-                orientation = 0f;
+                orientation = this.transform.eulerAngles.y * Mathf.Deg2Rad;
             }
 
             steering = new KinematicSteeringOutput();
@@ -88,7 +88,7 @@ namespace SteeringNamespace
             new_force.Normalize();
             if (new_force.magnitude > 0f)
             {
-                return Mathf.Atan2(-velc.z, velc.x);
+                return Mathf.Atan2(-new_force.z, new_force.x);
             }
             else
             {

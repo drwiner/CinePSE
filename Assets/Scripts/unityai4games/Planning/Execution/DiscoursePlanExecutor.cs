@@ -140,6 +140,11 @@ namespace PlanningNamespace
                     var originalCameraCloneName = cameraClone.name;
                     cameraClone.name += "_//_" + timelineclip.display + "_// focusOn: " + actionSeg.targetVarName + "// achor: " + targetSchema.location;
 
+                    if (step == discourseSteps[discourseSteps.Count - 1])
+                    {
+                        accumulatedTime += 10f;
+                    }
+
                     // Create ClipInfo unit
                     var CI = new ClipInfo(director, startTime + accumulatedTime, amountOfDuration, displayOfClip);
 
@@ -253,7 +258,8 @@ namespace PlanningNamespace
                 var firstTimelineClip = mappingActionSegIDsToDurativeClips[targetSchema.ActionSegs[0].ActionID];
                 var directorOfThisSegment = firstTimelineClip.director;
                 var intoClipStartFirstSegment = firstTimelineClip.start + (targetSchema.ActionSegs[0].startPercent * firstTimelineClip.duration);
-                TimeClip((float)startTime, (float)accumulatedTime- .12f, cameraClone.name, directorOfThisSegment, (float)intoClipStartFirstSegment);
+                TimeClip((float)startTime - .006f, (float)accumulatedTime- .083f, cameraClone.name, directorOfThisSegment, (float)intoClipStartFirstSegment);
+                
                 FilmClip((float)startTime, (float)accumulatedTime, cameraClone.name, cvc);
                 startTime += accumulatedTime;
 
@@ -262,7 +268,7 @@ namespace PlanningNamespace
                 {
                     var lerpClip = lerpTrack.CreateClip<LerpToMoveObjectAsset>();
                     lerpClip.start = startTime;
-                    lerpClip.duration = 0.1f;
+                    lerpClip.duration = 0.01f;
                     lerpClip.displayName = "return camera to starting pos";
                     LerpToMoveObjectAsset lClip = lerpClip.asset as LerpToMoveObjectAsset;
                     TransformToBind(lClip, cameraClone, cameraClone.transform);
@@ -421,7 +427,7 @@ namespace PlanningNamespace
                 //cameraClone.transform.LookAt(targetLocation);
                 cvc.m_LookAt = targetLocation;
 
-                PanClip((float)CI.start + 0.0833f, (float)CI.duration - 0.0833f, CI.display, cvc, targetOfFocus);
+                PanClip((float)CI.start, (float)CI.duration, CI.display, cvc, targetOfFocus);
 
                 var parent = targetOfFocus;
                 var attachClip = attachTrack.CreateClip<AttachToParent>();
@@ -503,7 +509,7 @@ namespace PlanningNamespace
                 cvc.m_LookAt = targetLocation;
                 
 
-                PanClip((float)CI.start + 0.0833f, (float)CI.duration - 0.0833f, CI.display, cvc, targetOfFocus);
+                PanClip((float)CI.start, (float)CI.duration, CI.display, cvc, targetOfFocus);
             }
 
         }

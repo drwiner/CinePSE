@@ -254,7 +254,7 @@ namespace SteeringNamespace
                 KinematicBody.setVelocity(currentVelocity);
                 KinematicBody.setOrientation(KinematicBody.getNewOrientation(currentVelocity));
                 transform.position = new Vector3(KinematicBody.Position.x, transform.position.y, KinematicBody.Position.z);
-                transform.rotation = Quaternion.Euler(0f, KinematicBody.getOrientation() * Mathf.Rad2Deg - 90f, 0f);
+                transform.rotation = Quaternion.Euler(0f, KinematicBody.getOrientation() * Mathf.Rad2Deg, 0f);
             }
             else
             {
